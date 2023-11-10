@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './global.css';
 
 import Login from './pages/login/login';
-import Site from './pages/site/site';
 import Treino from './pages/treino/treino';
+import CompraProdutoDisney from './pages/compra-produto-disney';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +14,8 @@ root.render(
       <Routes>
 
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Site />} />
-        <Route path="/treino" element={<Treino />} />
+        <Route path="/" element={<Treino />} />
+        <Route path="/compra-produto-disney" element={<CompraProdutoDisney />} />
         
       </Routes>
     </BrowserRouter>
