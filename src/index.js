@@ -4,8 +4,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './global.css';
 
 import Login from './pages/login/login';
-import Treino from './pages/treino/treino';
+import Home from './pages/home/home';
 import CompraProdutoDisney from './pages/compra-produto-disney';
+import Listagem from './pages/listagem/listagem';
+import CadastroProduto from './pages/cadastro-produto/cadastroProduto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +16,10 @@ root.render(
       <Routes>
 
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Treino />} />
+        <Route path="/" element={<Home />} />
         <Route path="/compra-produto-disney" element={<CompraProdutoDisney />} />
+        <Route path="/listagem" element={<Listagem />} />
+        <Route path="/cadastro-produto" element={<CadastroProduto />} />
         
       </Routes>
     </BrowserRouter>

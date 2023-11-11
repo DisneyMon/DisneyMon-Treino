@@ -1,5 +1,7 @@
 import './header.scss'
 
+import { Link } from "react-router-dom";
+
 export default function Header() {
 
     return (
@@ -7,17 +9,21 @@ export default function Header() {
         <div className="header">
 
             <header className='header-section1'>
-                <figure className='figure-section1 figure-section1-responsivo'>
-                    <img className='img-section1-logo' src="/assets/images/sections/section1/logo-soturno.png" alt="Logo DisneyMon" />
-                </figure>
+                <Link className='Link-header' to="/">
+                    <figure className='figure-section1 figure-section1-responsivo'>
+                        <img className='img-section1-logo' src="/assets/images/header/logo-disneymon.png" alt="Logo DisneyMon" />
+                    </figure>
+                </Link>
                 <nav className="nav-section1">
                     <p className="p-section1 p-section1-amarelo">Contato</p>
-                    <p className="p-section1 p-section1-azul">Sobre</p>
-                    <figure className='figure-section1'>
-                        <img className='img-section1-logo' src="/assets/images/sections/section1/logo-soturno.png" alt="Logo DisneyMon" />
-                    </figure>
+                    <Link to="/sobre"><p className="p-section1 p-section1-azul">Sobre</p></Link>
+                    <Link className='Link-header' to="/">
+                        <figure className='figure-section1'>
+                            <img className='img-section1-logo' src="/assets/images/header/logo-disneymon.png" alt="Logo DisneyMon" />
+                        </figure>
+                    </Link>
                     <p className="p-section1 p-section1-amarelo">Produtos</p>
-                    <p className="p-section1 p-section1-azul">Login</p>
+                    <Link to="/login"><p className="p-section1 p-section1-azul">Login</p></Link>
                 </nav>
             </header>
 

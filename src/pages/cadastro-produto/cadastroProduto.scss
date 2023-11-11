@@ -1,0 +1,169 @@
+@import '../../components/variaveis/index';
+
+.cadastroProduto-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-cadastro-produto {
+        width: 60%;
+        height: 80%;
+        min-width: 921.6px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #EFE232;
+        border-radius: 60px;
+
+        .figure-cadastro-produto-direito{
+            width: 15%;
+            height: 100%;
+            background-image: url(../../../public/assets/images/cadastro/background-cadastro.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-right-radius: 60px;
+            border-bottom-right-radius: 60px;
+
+        }
+
+        .figure-cadastro-produto-esquerdo{
+            width: 15%;
+            height: 100%;
+            background-image: url(../../../public/assets/images/login/background-login.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-left-radius: 60px;
+            border-bottom-left-radius: 60px;
+
+        }
+
+        .section-cadastro-produto {
+            width: 70%;
+            height: 100%;
+            min-width: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to left, #ebebc9 50%, #96d0e8 50%);
+            
+            .section-cadastro-produto-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .h1-cadastro-produto {
+                    font: $irishGrover-60;
+                    color: black;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                .section-cadastro-produto-radio {
+                    display: flex;
+                    gap: 50px;
+
+                    .article-cadastro-produto {
+                        gap: 10px;
+                        display: flex;
+                        align-items: center;
+        
+                        .radio-cadastro-produto {
+                            cursor: pointer;
+                            appearance: none;
+                            width: 30px;
+                            height: 30px;
+                            border: 3px solid  black;
+                            border-radius: 50%;
+                            position: relative;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            outline: none;
+                        }
+        
+                        .radio-cadastro-produto:before {
+                            content: '';
+                            width: 15px;
+                            height: 15px;
+                            background:  black;
+                            border-radius: 50%;
+                            opacity: 0;
+                            transition: all 600ms ease-in-out;
+                            position: absolute;
+                        }
+        
+                        .radio-cadastro-produto:checked:before {
+                            opacity: 1;
+                        }
+        
+                        .radio-cadastro-produto:focus {
+                            box-shadow: 0 0 5px  black;
+                        }
+        
+                        .label-cadastro-produto {
+                            color:  black;
+                            font: $inter-20;
+                        }
+                    }
+                }
+            }
+        }
+
+        .figure-cadastro-produto-2 {
+            display: none;
+        }
+    }
+}
+
+
+@media (min-width: 3000px) {
+
+    .cadastroProduto-page {
+
+        .main-cadastro-produto {
+            
+            .section-cadastro-produto {
+                
+                
+                .section-cadastro-produto-form {
+                    
+    
+                    .h1-cadastro-produto {
+                        font: $irishGrover-120;
+                    }
+    
+                    .a-cadastro-produto {
+                        font: $irishGrover-34;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .cadastroProduto-page {
+
+        .main-cadastro-produto {
+            min-width: 520px;
+    
+            .figure-cadastro-produto{
+                width: 30%;
+                min-width: 100px;
+    
+            }
+
+            .figure-cadastro-produto-2 {
+                display: flex;
+                border-top-left-radius: 60px;
+                border-bottom-left-radius: 60px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+    }
+} 

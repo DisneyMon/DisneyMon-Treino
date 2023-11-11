@@ -6,8 +6,13 @@
     background-color: #D5F8F5;
     background-image: url(../../../../public/assets/images/sections/section1/background-section1.png);
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 110px;
+    background-position: center;
     background-size: 45%;
+}
 
+@media (max-width: 600px) {
+    .section1 {
+        background-size: 100%;
+        background-position-y: 70%;
+    }
 }
