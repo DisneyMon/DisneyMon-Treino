@@ -11,7 +11,30 @@ export default function CadastroProduto() {
 
     function escolhaCadProd() {
 
+        if (document.getElementById('cadastro').cheked) {
+            setEscolha('cadastro');
+        }
+        else if (document.getElementById('alteracao').cheked) {
+            setEscolha('alteracao');
+        }
+        else {
+            setEscolha(null);
     }
+}
+
+function cadastroHTML() {
+
+    return(
+
+        <section className="section-cadastro-produto-form">
+
+
+
+        </section>
+
+)
+
+}
 
     return (
 
@@ -23,24 +46,31 @@ export default function CadastroProduto() {
 
                 <section className="section-cadastro-produto">
 
-                    <section className="section-cadastro-produto-form">
+                    <section className="section-escolha-form">
 
-                        <h1 className="h1-cadastro-produto">Escolha</h1>
+                        <h1 className="h1-escolha">Escolha</h1>
 
-                        <section className="section-cadastro-produto-radio">
+                        <section className="section-escolha-radio">
 
-                            <article className="article-cadastro-produto">
-                                <input className='radio-cadastro-produto' id='cadastro' type="radio" name='escolha' />
-                                <label className='label-cadastro-produto' for="cadastro">Cadastro</label>
+                            <article className="article-escolha">
+                                <input className='radio-escolha' id='cadastro' type="radio" name='escolha' />
+                                <label className='label-escolha' for="cadastro">Cadastro</label>
                             </article>
 
-                            <article className="article-cadastro-produto">
-                                <input className='radio-cadastro-produto' id='alteracao' type="radio" name='escolha' />
-                                <label className='label-cadastro-produto' for="alteracao">Alteração</label>
+                            <article className="article-escolha">
+                                <input className='radio-escolha' id='alteracao' type="radio" name='escolha' />
+                                <label className='label-escolha' for="alteracao">Alteração</label>
                             </article>
 
                         </section>
-                    </section>
+
+                        <Button action="Confirmar" className="button-escolha" onClick={escolhaCadProd}>Escolher</Button>
+
+                        {escolha === 'cadastro' && cadastroHTML()}
+
+                    </section> 
+
+                    
                 </section>
 
                 <figure className="figure-cadastro-produto-esquerdo"></figure>

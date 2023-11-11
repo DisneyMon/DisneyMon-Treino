@@ -16,7 +16,7 @@ export default function Cadastro() {
 
                 <section className="section-cadastro">
 
-                    <section className="section-cadastro-form">
+                    <form className="form-cadastro">
 
                         <h1 className="h1-cadastro">cadastro</h1>
                         <Input title="E-mail" type="text" />
@@ -25,7 +25,7 @@ export default function Cadastro() {
                         <Button action="Entrar" />
                         <Link className="a-cadastro" href="/login">Não possui conta? Cadastre-se aqui</Link>
 
-                    </section>
+                    </form>
 
                 </section>
 

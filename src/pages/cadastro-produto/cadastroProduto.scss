@@ -48,28 +48,28 @@
             align-items: center;
             background-image: linear-gradient(to left, #ebebc9 50%, #96d0e8 50%);
             
-            .section-cadastro-produto-form {
+            .section-escolha-form {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                .h1-cadastro-produto {
+                .h1-escolha {
                     font: $irishGrover-60;
                     color: black;
                     text-align: center;
                     margin-bottom: 20px;
                 }
 
-                .section-cadastro-produto-radio {
+                .section-escolha-radio {
                     display: flex;
                     gap: 50px;
 
-                    .article-cadastro-produto {
+                    .article-escolha {
                         gap: 10px;
                         display: flex;
                         align-items: center;
         
-                        .radio-cadastro-produto {
+                        .radio-escolha {
                             cursor: pointer;
                             appearance: none;
                             width: 30px;
@@ -84,7 +84,7 @@
                             outline: none;
                         }
         
-                        .radio-cadastro-produto:before {
+                        .radio-escolha:before {
                             content: '';
                             width: 15px;
                             height: 15px;
@@ -95,15 +95,15 @@
                             position: absolute;
                         }
         
-                        .radio-cadastro-produto:checked:before {
+                        .radio-escolha:checked:before {
                             opacity: 1;
                         }
         
-                        .radio-cadastro-produto:focus {
+                        .radio-escolha:focus {
                             box-shadow: 0 0 5px  black;
                         }
         
-                        .label-cadastro-produto {
+                        .label-escolha {
                             color:  black;
                             font: $inter-20;
                         }
@@ -128,15 +128,11 @@
             .section-cadastro-produto {
                 
                 
-                .section-cadastro-produto-form {
+                .section-escolha-form {
                     
     
-                    .h1-cadastro-produto {
+                    .h1-escolha {
                         font: $irishGrover-120;
-                    }
-    
-                    .a-cadastro-produto {
-                        font: $irishGrover-34;
                     }
                 }
             }

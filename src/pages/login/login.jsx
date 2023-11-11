@@ -16,7 +16,7 @@ export default function Login() {
 
                 <section className="section-login">
 
-                    <section className="section-login-form">
+                    <form className="form-login">
 
                         <h1 className="h1-login">Login</h1>
                         <Input title="E-mail" type="text"/>
@@ -24,7 +24,7 @@ export default function Login() {
                         <Button action="Entrar"/>
                         <Link className="a-login" href="/cadastro">Não possui conta? Cadastre-se aqui</Link>
 
-                    </section>
+                    </form>
 
                 </section>
 
