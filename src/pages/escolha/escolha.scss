@@ -1,6 +1,6 @@
 @import '../../components/variaveis/index';
 
-.cadastroProduto-page {
+.escolha-page {
     width: 100vw;
     height: 100vh;
     background-color: transparent;
@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
 
-    .main-cadastroProduto {
+    .main-escolha {
         width: 60%;
         height: 80%;
         min-width: 921.6px;
@@ -17,7 +17,7 @@
         background-color: #EFE232;
         border-radius: 60px;
 
-        .figure-cadastroProduto-direito{
+        .figure-escolha-direito{
             width: 15%;
             height: 100%;
             background-image: url(../../../public/assets/images/cadastro/background-cadastro.jpg);
@@ -28,7 +28,7 @@
 
         }
 
-        .figure-cadastroProduto-esquerdo{
+        .figure-escolha-esquerdo{
             width: 15%;
             height: 100%;
             background-image: url(../../../public/assets/images/login/background-login.jpeg);
@@ -39,7 +39,7 @@
 
         }
 
-        .section-cadastroProduto {
+        .section-escolha {
             width: 70%;
             height: 100%;
             min-width: 320px;
@@ -48,32 +48,28 @@
             align-items: center;
             background-image: linear-gradient(to left, #ebebc9 50%, #96d0e8 50%);
             
-            .section-cadastroProduto-form {
+            .section-escolha-form {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                .h1-cadastroProduto {
+                .h1-escolha {
                     font: $irishGrover-60;
                     color: black;
                     text-align: center;
                     margin-bottom: 20px;
                 }
 
-                .form-cadastroProduto {
-                    
-                }
-
-                .section-cadastroProduto-radio {
+                .section-escolha-radio {
                     display: flex;
                     gap: 50px;
 
-                    .article-cadastroProduto {
+                    .article-escolha {
                         gap: 10px;
                         display: flex;
                         align-items: center;
         
-                        .radio-cadastroProduto {
+                        .radio-escolha {
                             cursor: pointer;
                             appearance: none;
                             width: 30px;
@@ -88,7 +84,7 @@
                             outline: none;
                         }
         
-                        .radio-cadastroProduto:before {
+                        .radio-escolha:before {
                             content: '';
                             width: 15px;
                             height: 15px;
@@ -99,15 +95,15 @@
                             position: absolute;
                         }
         
-                        .radio-cadastroProduto:checked:before {
+                        .radio-escolha:checked:before {
                             opacity: 1;
                         }
         
-                        .radio-cadastroProduto:focus {
+                        .radio-escolha:focus {
                             box-shadow: 0 0 5px  black;
                         }
         
-                        .label-cadastroProduto {
+                        .label-escolha {
                             color:  black;
                             font: $inter-20;
                         }
@@ -116,7 +112,7 @@
             }
         }
 
-        .figure-cadastroProduto-2 {
+        .figure-escolha-2 {
             display: none;
         }
     }
@@ -125,17 +121,17 @@
 
 @media (min-width: 3000px) {
 
-    .cadastroProduto-page {
+    .escolha-page {
 
-        .main-cadastroProduto {
+        .main-escolha {
             
-            .section-cadastroProduto{
+            .section-escolha{
                 
                 
-                .section-cadastroProduto-form {
+                .section-escolha-form {
                     
     
-                    .h1-cadastroProduto {
+                    .h1-escolha {
                         font: $irishGrover-120;
                     }
                 }
@@ -146,18 +142,18 @@
 
 @media (max-width: 1000px) {
 
-    .cadastroProduto-page {
+    .escolha-page {
 
-        .main-cadastroProduto {
+        .main-escolha {
             min-width: 520px;
     
-            .figure-cadastroProduto{
+            .figure-escolha{
                 width: 30%;
                 min-width: 100px;
     
             }
 
-            .figure-cadastroProduto-2 {
+            .figure-escolha-2 {
                 display: flex;
                 border-top-left-radius: 60px;
                 border-bottom-left-radius: 60px;
