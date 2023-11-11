@@ -16,9 +16,11 @@ export default function CadastroProduto() {
 
                         <h1 className="h1-cadastroProduto">Cadastro de Produtos</h1>
 
-                        <form action="form-cadastroProduto">
+                        <form className='teste'>
+                            <h1>sdasd</h1>
+                            <input type="text" />
+                            <input type="text" />
 
-                            
                         </form>
 {/* 
                         <section className="section-cadastroProduto-radio">
