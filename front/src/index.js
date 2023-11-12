@@ -6,7 +6,7 @@ import './global.scss';
 import Login from './pages/login/login';
 import Cadastro from './pages/cadastro/cadastro';
 import Home from './pages/home/home';
-import CompraProdutoDisney from './pages/compra-produto-disney';
+import CompraProduto from './pages/compra-produto';
 import Listagem from './pages/listagem/listagem';
 import EscolhaCadAlt from './pages/escolhas/escolhaCadAlt';
 import CadastroProduto from './pages/cadastro-produto/cadastroProduto';
@@ -14,7 +14,6 @@ import EscolhaUsuProd from './pages/escolhas/escolhaUsuProd';
 import AlteracaoUsuario from './pages/alteracao-usuario/alteracaoUsuario';
 import AlteracaoProduto from './pages/alteracao-produto/alteracaoProduto';
 import Sobre from './pages/sobre/sobre';
-import CompraProdutoPokemon from './pages/compra-produto-pokemon';
 import Produtos from './pages/produtos/produtos';
 import Deletar from './pages/deletar/deletar';
 import Erro from './pages/erro/erro';
@@ -27,11 +26,10 @@ root.render(
 
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
-        <Route path="/compra-produto-disney" element={<CompraProdutoDisney />} />
+        <Route path="/compra-produto" element={<CompraProduto />} />
         <Route path="/listagem" element={<Listagem />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/sobre" element={<Sobre />} />
-        <Route path="/compra-produto-pokemon" element={<CompraProdutoPokemon />} />
         <Route path="/produtos" element={<Produtos />} />
 
         <Route path="/deletar" element={<Deletar />} />

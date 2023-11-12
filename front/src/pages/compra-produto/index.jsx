@@ -8,7 +8,9 @@ export default function CompraProdutoDisney() {
 
         <div className="page-produto-disney">
 
-            <Header className="Header-produto-disney" />
+            <header className='header-compra-produto-disney'>
+                <Header />
+            </header>
 
             <section className="section-produto-disney-coluna">
                 <div className='div-produto-disney-esquerdo'></div>

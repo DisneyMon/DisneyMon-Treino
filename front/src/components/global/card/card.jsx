@@ -1,6 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import './card.scss';
 
 export default function Card(props) {
+
+    const navigate = useNavigate();
+
+    function navegar() {
+                
+                navigate('/compra-produto');
+        }
 
     return (
 
@@ -8,7 +16,7 @@ export default function Card(props) {
 
             <section className='section-card-button'>
 
-                <button className='buttom-card'>Comprar</button>
+                <button onClick={navegar} className='buttom-card'>Comprar</button>
 
             </section>
 

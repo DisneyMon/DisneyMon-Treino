@@ -2,8 +2,8 @@
 
 .page-produto-disney {
     width: 100vw;
-    height: 120vh;
-    background-color: #C2E4E2;
+    height: 100vh;
+    background-image: linear-gradient(to left, #ebebc9 50%, #96d0e8 50%);
 
     .Header-produto-disney {
         display: flex;
@@ -54,6 +54,7 @@
                     flex-direction: column;
 
                     .h2-produto-disney {
+                        height: 80px;
                         font: $irishGrover-50;
                         overflow-y: hidden;
                     }
@@ -97,7 +98,7 @@
 
             .section-produto-disney-descricao {
                 width: 100%;
-                height: 50%;
+                height: 37%;
                 padding: 20px;
 
                 .h4-produto-disney {
@@ -113,7 +114,7 @@
         .div-produto-disney-direito {
             width: 9%;
             height: 100%;
-            background-image: url("../../../public/assets/images/login/background-login.jpeg");
+            background-image: url("../../../public/assets/images/cadastro/background-cadastro.jpg");
             background-size: cover;
             background-position: center;
         }
