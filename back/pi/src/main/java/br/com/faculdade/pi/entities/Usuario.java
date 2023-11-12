@@ -16,13 +16,23 @@ public class Usuario implements Serializable {
     private String nome;
     private String email;
     private String senha;
+    private boolean admin;
 
     public Usuario(){}
 
-    public Usuario(String nome, String email, String senha){
+    public Usuario(String nome, String email, String senha, boolean admin){
         this.nome = nome;
         this.email = email;
         this.senha = senha;
+        this.admin = admin;
+    }
+
+    public Boolean getAdmin(){
+        return this.admin;
+    }
+
+    public void setAdmin(boolean admin){
+        this.admin = admin;
     }
 
     public String getEmail() {

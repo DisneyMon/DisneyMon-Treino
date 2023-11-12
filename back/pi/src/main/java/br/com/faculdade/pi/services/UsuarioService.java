@@ -43,6 +43,7 @@ public class UsuarioService {
         usuario_alterar.setNome(usuario.getNome());
         usuario_alterar.setEmail(usuario.getEmail());
         usuario_alterar.setSenha(usuario.getSenha());
+        usuario_alterar.setAdmin(usuario.getAdmin());
         return usuarioRepository.save(usuario_alterar);
     }
 

@@ -17,6 +17,7 @@ export default function Login() {
         try {
             let response = await axios.get(`http://localhost:8080/usuarios/login?email=${email}&senha=${senha}`)
             alert(`Usuário ${response.data.nome} logado com sucesso`)
+            localStorage.setItem("admin", response.data.admin)
             navigate('/');
         } catch (error) {   
             alert(`Erro ao tentar logar, email ou senha incorretos`)
