@@ -1,6 +1,7 @@
 import './produtos.scss'
 import Header from '../../components/global/header/header'
 import Card from '../../components/global/card/card'
+import Figure1 from '../../components/figures/figure1'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -46,6 +47,23 @@ export default function Produtos() {
                 {dados.map((produto) => (
                         <Card nome={produto.nome} preco={produto.preco} imagemUrl={produto.imagemUrl} descricao={produto.descricao}/>
                     ))} 
+
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    <Figure1/>
+                    
 
                 </section>
             </main>
