@@ -1,6 +1,6 @@
-import './cadastroProduto.scss'
+import './alteracaoUsuario.scss'
 
-export default function CadastroProduto() {
+export default function AlteracaoUsuario() {
 
     return (
 
@@ -14,39 +14,31 @@ export default function CadastroProduto() {
 
                     <section className="section-cadastroProduto-form">
 
-                        <h1 className="h1-cadastroProduto">Cadastro de Produtos</h1>
+                        <h1 className="h1-cadastroProduto">Alteração Usuário</h1>
 
                         <form className='teste'>
 
                             <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Nome do Produto</label>
+                                <label htmlFor="">Id</label>
+                                <input type="text" />
+                                <button>Pesquisar</button>
+                            </article>
+
+                            <article className='article-cadastroProduto-input'>
+                                <label htmlFor="">Nome</label>
                                 <input type="text" />
                             </article>
 
                             <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Preço</label>
+                                <label htmlFor="">Email</label>
                                 <input type="number" />
                             </article>
 
                             <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Imagem Link</label>
+                                <label htmlFor="">Senha</label>
                                 <input type="text" />
                             </article>
 
-                            <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Descrição</label>
-                                <input type="text" />
-                            </article>
-
-                            <article className="article-cadastroProduto">
-                                <input className='radio-cadastroProduto' id='cadastro' type="radio" name='escolha' />
-                                <label className='label-cadastroProduto' for="cadastro">Disney</label>
-                            </article>
-
-                            <article className="article-cadastroProduto">
-                                <input className='radio-cadastroProduto' id='alteracao' type="radio" name='escolha' />
-                                <label className='label-cadastroProduto' for="alteracao">Pokémon</label>
-                            </article>
 
                             <button>Cadastrar</button>
 

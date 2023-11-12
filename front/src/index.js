@@ -10,6 +10,9 @@ import CompraProdutoDisney from './pages/compra-produto-disney';
 import Listagem from './pages/listagem/listagem';
 import Escolha from './pages/escolha/escolha';
 import CadastroProduto from './pages/cadastro-produto/cadastroProduto';
+import EscolhaUsuProd from './pages/escolha-usuprod/escolhaUsuProd';
+import AlteracaoUsuario from './pages/alteracao-usuario/alteracaoUsuario';
+import AlteracaoProduto from './pages/alteracao-produto/alteracaoProduto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +27,9 @@ root.render(
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/escolha" element={<Escolha />} />
         <Route path="/cadastro-produto" element={<CadastroProduto />} />
+        <Route path="/escolha-usuario-produto" element={<EscolhaUsuProd />} />
+        <Route path="/alteracao-usuario" element={<AlteracaoUsuario />} />
+        <Route path="/alteracao-produto" element={<AlteracaoProduto />} />
         
       </Routes>
     </BrowserRouter>

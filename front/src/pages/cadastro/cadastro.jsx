@@ -1,7 +1,4 @@
 import './cadastro.scss'
-
-import Input from "../../components/login-cadastro/input/input";
-import Button from "../../components/login-cadastro/button/button";
 import { Link } from 'react-router-dom';
 
 export default function Cadastro() {
@@ -19,10 +16,10 @@ export default function Cadastro() {
                     <form className="form-cadastro">
 
                         <h1 className="h1-cadastro">cadastro</h1>
-                        <Input title="E-mail" type="text" />
-                        <Input title="Nome de Usuário" type="text" />
-                        <Input title="Senha" type="password" />
-                        <Button action="Entrar" />
+                        <input title="E-mail" type="text" />
+                        <input title="Nome de Usuário" type="text" />
+                        <input title="Senha" type="password" />
+                        <button action="Entrar" />
                         <Link className="a-cadastro" href="/login">Não possui conta? Cadastre-se aqui</Link>
 
                     </form>

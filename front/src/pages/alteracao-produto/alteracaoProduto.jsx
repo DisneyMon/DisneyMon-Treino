@@ -1,6 +1,6 @@
-import './cadastroProduto.scss'
+import './alteracaoProduto.scss'
 
-export default function CadastroProduto() {
+export default function AlteracaoProduto() {
 
     return (
 
@@ -17,6 +17,12 @@ export default function CadastroProduto() {
                         <h1 className="h1-cadastroProduto">Cadastro de Produtos</h1>
 
                         <form className='teste'>
+
+                        <article className='article-cadastroProduto-input'>
+                                <label htmlFor="">Id</label>
+                                <input type="text" />
+                                <button>Pesquisar</button>
+                            </article>
 
                             <article className='article-cadastroProduto-input'>
                                 <label htmlFor="">Nome do Produto</label>

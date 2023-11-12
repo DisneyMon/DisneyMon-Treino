@@ -1,19 +1,18 @@
-import './escolha.scss'
+import { useNavigate } from 'react-router-dom';
+import './escolhaUsuProd.scss'
 
-import { Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+export default function EscolhaUsuProd() {
 
-export default function Escolha() {
     const navigate = useNavigate();
 
-    function escolhaCadProd() {
+    function escolhaUsuarioProduto() {
 
-        if (document.getElementById('cadastro').checked) {
-            navigate('/cadastro-produto');
+        if (document.getElementById('usuario').checked) {
+            navigate('/alteracao-usuario');
             
         }
-        else if (document.getElementById('alteracao').checked) {
-            navigate('/escolha-usuario-produto')
+        else if (document.getElementById('produto').checked) {
+            navigate('/alteracao-produto')
         }
         else {
             
@@ -37,18 +36,18 @@ export default function Escolha() {
                         <section className="section-escolha-radio">
 
                             <article className="article-escolha">
-                                <input className='radio-escolha' id='cadastro' type="radio" name='escolha' />
-                                <label className='label-escolha' for="cadastro">Cadastro</label>
+                                <input className='radio-escolha' id='usuario' type="radio" name='escolha' />
+                                <label className='label-escolha' for="usuario">Usuário</label>
                             </article>
 
                             <article className="article-escolha">
-                                <input className='radio-escolha' id='alteracao' type="radio" name='escolha' />
-                                <label className='label-escolha' for="alteracao">Alteração</label>
+                                <input className='radio-escolha' id='produto' type="radio" name='escolha' />
+                                <label className='label-escolha' for="produto">Produto</label>
                             </article>
 
                         </section>
 
-                        <button className="button-escolha" onClick={escolhaCadProd}>Escolher</button>
+                        <button className="button-escolha" onClick={escolhaUsuarioProduto}>Escolher</button>
 
                     </section> 
 
@@ -66,3 +65,4 @@ export default function Escolha() {
     )
 
 }
+
