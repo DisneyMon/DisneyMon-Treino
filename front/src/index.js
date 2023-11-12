@@ -33,8 +33,8 @@ root.render(
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/compra-produto-pokemon" element={<CompraProdutoPokemon />} />
         <Route path="/produtos" element={<Produtos />} />
-        <Route path="/deletar" element={<Deletar />} />
 
+        <Route path="/deletar" element={<Deletar />} />
         <Route path="/escolha-usuario-produto" element={<EscolhaUsuProd />} />
         <Route path="/cadastro-produto" element={<CadastroProduto />} />
         <Route path="/escolha-cadastro-alteracao" element={<EscolhaCadAlt />} />

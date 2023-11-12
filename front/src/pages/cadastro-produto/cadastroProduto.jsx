@@ -12,7 +12,7 @@ export default function CadastroProduto() {
 
     // useEffect(() => {
     //     if(!isAdmin){
-    //         navigate("/")
+    //         navigate("/Erro")
     //     }
     // }, [])
     
