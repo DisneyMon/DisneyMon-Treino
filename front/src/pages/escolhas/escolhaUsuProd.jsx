@@ -4,7 +4,12 @@ import './escolha.scss'
 export default function EscolhaUsuProd() {
 
     const navigate = useNavigate();
-
+    // useEffect(() => {
+    //     if(!isAdmin){
+    //         navigate("/Erro")
+    //     }
+    // }, [])
+    
     function escolhaUsuarioProduto() {
 
         if (document.getElementById('usuario').checked) {

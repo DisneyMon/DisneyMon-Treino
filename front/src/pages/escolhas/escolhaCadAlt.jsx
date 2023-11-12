@@ -6,6 +6,12 @@ import { useState } from 'react';
 export default function EscolhaCadAlt() {
     const navigate = useNavigate();
 
+    // useEffect(() => {
+    //     if(!isAdmin){
+    //         navigate("/Erro")
+    //     }
+    // }, [])
+
     function escolhaCadProd() {
 
         if (document.getElementById('cadastro').checked) {

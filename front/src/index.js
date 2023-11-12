@@ -31,8 +31,8 @@ root.render(
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/produtos" element={<Produtos />} />
-        <Route path="/deletar" element={<Deletar />} />
 
+        <Route path="/deletar" element={<Deletar />} />
         <Route path="/escolha-usuario-produto" element={<EscolhaUsuProd />} />
         <Route path="/cadastro-produto" element={<CadastroProduto />} />
         <Route path="/escolha-cadastro-alteracao" element={<EscolhaCadAlt />} />

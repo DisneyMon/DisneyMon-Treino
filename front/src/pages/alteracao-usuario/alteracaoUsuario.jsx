@@ -1,6 +1,59 @@
+import axios from 'axios'
 import './alteracaoUsuario.scss'
+import { useState } from 'react'
 
 export default function AlteracaoUsuario() {
+
+    const [email, setEmail] = useState("")
+    const [senha, setSenha] = useState("")
+    const [nome, setNome] = useState("")
+    const [id, setId] = useState("")
+
+    // useEffect(() => {
+    //     if(!isAdmin){
+    //         navigate("/Erro")
+    //     }
+    // }, [])
+    
+    async function updateUsuario(event){
+        event.preventDefault()
+        let body = {
+            nome: nome,
+            email: email,
+            senha: senha
+        }
+        try {
+            let response = await axios.put(`http://localhost:8080/usuarios/${id}`, body)
+            if(response.data == null){
+                alert("Essa pessoa não existe")
+            }
+            else{
+                alert(`Usuario alterado com sucesso`)
+            }
+        } catch (error) {
+            alert(`Erro ao tentar atualizar`)
+        }
+    }
+
+    async function autoComplete(event){
+        event.preventDefault()
+        try {
+            let response = await axios.get(`http://localhost:8080/usuarios/${id}`)
+            if(!response.data){
+                alert("Essa pessoa não existe")
+                setEmail("")
+                setNome("")
+                setSenha("")
+            }
+            else{
+                setEmail(response.data.email)
+                setNome(response.data.nome)
+                setSenha(response.data.senha)
+            }
+        } catch (error) {
+            alert(`Erro ao tentar buscar`)
+        }
+    }
 
     return (
 
@@ -21,28 +74,28 @@ export default function AlteracaoUsuario() {
                             <article className='article-alteracaoUsuario-input'>
                                 <label className='label-alteracaoUsuario' htmlFor="">Id</label>
                                 <div className="div-id">
-                                <input className='input-id' type="text" />
-                                <button className='button-id'>Ok</button>
+                                <input className='input-id' type="text" value={id} onChange={event => setId(event.target.value)} />
+                                <button className='button-id' onClick={autoComplete}>Ok</button>
                                 </div>
                             </article>
 
                             <article className='article-alteracaoUsuario-input'>
                                 <label className='label-alteracaoUsuario' htmlFor="">Nome</label>
-                                <input  type="text" />
+                                <input  type="text" value={nome} onChange={event => setNome(event.target.value)}/>
                             </article>
 
                             <article className='article-alteracaoUsuario-input'>
                                 <label className='label-alteracaoUsuario' htmlFor="">Email</label>
-                                <input type="text" />
+                                <input type="text" value={email} onChange={event => setEmail(event.target.value)}/>
                             </article>
 
                             <article className='article-alteracaoUsuario-input'>
                                 <label className='label-alteracaoUsuario' htmlFor="">Senha</label>
-                                <input type="text" />
+                                <input type="text" value={senha} onChange={event => setSenha(event.target.value)}/>
                             </article>
 
 
-                            <button>Alterar</button>
+                            <button onClick={updateUsuario}>Alterar</button>
 
                         </form>
                         
