@@ -48,22 +48,8 @@ export default function Produtos() {
                         <Card nome={produto.nome} preco={produto.preco} imagemUrl={produto.imagemUrl} descricao={produto.descricao}/>
                     ))} 
 
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
-                    <Figure1/>
                     
+
 
                 </section>
             </main>
