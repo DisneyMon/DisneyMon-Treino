@@ -89,7 +89,7 @@ export default function CadastroProduto() {
                                 <label className='label-cadastroProduto' for="pokemon">Pokémon</label>
                             </article>
 
-                            <button>Cadastrar</button>
+                            <button onClick={cadastroProduto}>Cadastrar</button>
 
                         </form>
                         
