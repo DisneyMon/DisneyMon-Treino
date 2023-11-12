@@ -15,12 +15,15 @@ export default function Cadastro() {
 
                     <form className="form-cadastro">
 
-                        <h1 className="h1-cadastro">cadastro</h1>
+                        <h1 className="h1-cadastro">Cadastro</h1>
+                        <label htmlFor="" className="label-cadastro">Email</label>
                         <input title="E-mail" type="text" />
+                        <label htmlFor="" className="label-cadastro">Nome De Usuario</label>
                         <input title="Nome de Usuário" type="text" />
+                        <label htmlFor="" className="label-cadastro">Senha</label>
                         <input title="Senha" type="password" />
-                        <button action="Entrar" />
-                        <Link className="a-cadastro" href="/login">Não possui conta? Cadastre-se aqui</Link>
+                        <button className='button-cadastro' >Cadastrar</button>
+                        <Link className="a-cadastro" to="/login">Não possui conta? Cadastre-se aqui</Link>
 
                     </form>
 

@@ -35,10 +35,12 @@ export default function Login() {
                     <form className="form-login">
 
                         <h1 className="h1-login">Login</h1>
+                        <label className='label-login' htmlFor="">Email</label>
                         <input value={email} onChange={event => setEmail(event.target.value)} type="text"/>
+                        <label className='label-login' htmlFor="">Senha</label>
                         <input  type="password" value={senha} onChange={event => setSenha(event.target.value)}/>
-                        <button onClick={login} action="Entrar"/>
-                        <Link className="a-login" href="/cadastro">Não possui conta? Cadastre-se aqui</Link>
+                        <button className='button-login' onClick={login} >Entrar</button>
+                        <Link className="a-login" to="/cadastro">Não possui conta? Cadastre-se aqui</Link>
 
                     </form>
 
