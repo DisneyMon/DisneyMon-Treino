@@ -48,9 +48,6 @@ export default function Produtos() {
                         <Card nome={produto.nome} preco={produto.preco} imagemUrl={produto.imagemUrl} descricao={produto.descricao}/>
                     ))} 
 
-                    
-
-
                 </section>
             </main>
 
