@@ -1,0 +1,56 @@
+@import '../../components/variaveis/index';
+
+.sobre-page {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: linear-gradient(to left, #ebebc9 50%, #96d0e8 50%);
+
+    .header-sobre {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-sobre {
+        width: 100%;
+        height: 67vh;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .h1-sobre {
+            font: $irishGrover-60;
+        }
+
+        .p-sobre {
+            font: $inter-20;
+            text-align: center;
+        }
+    }
+
+    .footer-sobre {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+
+        .figure-sobre {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .section-sobre-disney {
+            width: 50%;
+            height: 100%;
+            
+        }
+
+        .section-sobre-pokemon {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}

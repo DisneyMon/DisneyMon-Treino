@@ -22,7 +22,7 @@ export default function Header() {
                             <img className='img-section1-logo' src="/assets/images/header/logo-disneymon.png" alt="Logo DisneyMon" />
                         </figure>
                     </Link>
-                    <p className="p-section1 p-section1-amarelo">Produtos</p>
+                    <Link to="/produtos"><p className="p-section1 p-section1-amarelo">Produtos</p></Link>
                     <Link to="/login"><p className="p-section1 p-section1-azul">Login</p></Link>
                 </nav>
             </header>
