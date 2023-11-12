@@ -1,7 +1,7 @@
 import React from 'react';
 import './login.scss';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 
@@ -9,17 +9,19 @@ export default function Login() {
 
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
-    const [nome, setNome] = useState("");
+    const navigate = useNavigate();
+
 
     async function login(event){
         event.preventDefault();
-        let response = await axios.get(`http://localhost:8080/usuarios/login?email=${email}&senha=${senha}`)
-        if(response.status === 404){
+        try {
+            let response = await axios.get(`http://localhost:8080/usuarios/login?email=${email}&senha=${senha}`)
+            alert(`Usuário ${response.data.nome} logado com sucesso`)
+            navigate('/');
+        } catch (error) {
             alert(`Erro ao tentar logar, email ou senha incorretos`)
         }
-        else{
-            alert(`Usuário ${response.data.nome} logado com sucesso`)
-        }
+        
     }
 
     return (

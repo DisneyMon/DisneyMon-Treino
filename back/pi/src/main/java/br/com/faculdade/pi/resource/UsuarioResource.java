@@ -32,7 +32,7 @@ public class UsuarioResource {
         Usuario usuario = usuarioService.login(email, senha);
 
         if(email.equals("") || senha.equals("") || usuario == null){
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.badRequest().body(null);
         }
 
         return ResponseEntity.ok().body(usuario);
