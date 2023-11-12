@@ -2,7 +2,7 @@
 
 .page-produtos {
     width: 100vw;
-    height: 150vh;
+    height: auto;
     background-color: #dee5e5;
 
     .header-produtos {
@@ -27,8 +27,36 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                text-align: center;
 
+                .h1-produtos{
+                    color: white;
+                    font: $irishGrover-96;
+                    
+                }
+
+                .h4-produtos {
+                    color: white;
+                    font: $irishGrover-34;
+                }
             }
+        }
+    }
+
+    .main-produtos {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        
+        .section-produtos {
+            width: 80%;
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: white;
         }
     }
 }
