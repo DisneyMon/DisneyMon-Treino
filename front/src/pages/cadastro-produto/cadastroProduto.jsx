@@ -34,6 +34,15 @@ export default function CadastroProduto() {
         }
     }
 
+    function selecionarTipo() {
+        if (document.getElementById('disney').checked) {
+            setTipo("Disney")
+        }
+        else if (document.getElementById('pokemon').checked) {
+            setTipo("Pokemon")
+        }
+    }
+
     return (
 
         <div className="cadastroProduto-page">
@@ -71,13 +80,13 @@ export default function CadastroProduto() {
                             </article>
 
                             <article className="article-cadastroProduto">
-                                <input className='radio-cadastroProduto' id='Disney' type="radio" name='escolha' />
-                                <label className='label-cadastroProduto' for="cadastro">Disney</label>
+                                <input className='radio-cadastroProduto' id='disney' type="radio" name='escolha' />
+                                <label className='label-cadastroProduto' for="disney">Disney</label>
                             </article>
 
                             <article className="article-cadastroProduto">
-                                <input className='radio-cadastroProduto' id='Pokemon' type="radio" name='escolha' />
-                                <label className='label-cadastroProduto' for="alteracao">Pokémon</label>
+                                <input className='radio-cadastroProduto' id='pokemon' type="radio" name='escolha' />
+                                <label className='label-cadastroProduto' for="pokemon">Pokémon</label>
                             </article>
 
                             <button>Cadastrar</button>
