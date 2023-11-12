@@ -35,9 +35,11 @@
         display: none;
         justify-content: center;
         position: absolute;
+        overflow-y: hidden;
         top: 150px;
 
         .buttom-card {
+            margin: 0px;
             width: 80%;
             font: $irishGrover-25;
             border: 2px solid black;

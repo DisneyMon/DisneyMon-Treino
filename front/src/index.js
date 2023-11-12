@@ -13,6 +13,9 @@ import CadastroProduto from './pages/cadastro-produto/cadastroProduto';
 import EscolhaUsuProd from './pages/escolhas/escolhaUsuProd';
 import AlteracaoUsuario from './pages/alteracao-usuario/alteracaoUsuario';
 import AlteracaoProduto from './pages/alteracao-produto/alteracaoProduto';
+import Sobre from './pages/sobre/sobre';
+import CompraProdutoPokemon from './pages/compra-produto-pokemon';
+import Produtos from './pages/produtos/produtos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +33,9 @@ root.render(
         <Route path="/escolha-usuario-produto" element={<EscolhaUsuProd />} />
         <Route path="/alteracao-usuario" element={<AlteracaoUsuario />} />
         <Route path="/alteracao-produto" element={<AlteracaoProduto />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/compra-produto-pokemon" element={<CompraProdutoPokemon />} />
+        <Route path="/produtos" element={<Produtos />} />
         
       </Routes>
     </BrowserRouter>

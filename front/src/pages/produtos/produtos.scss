@@ -1,0 +1,34 @@
+@import '../../components/variaveis/index';
+
+.page-produtos {
+    width: 100vw;
+    height: 150vh;
+    background-color: #dee5e5;
+
+    .header-produtos {
+        height: 50vh;
+        background-image: url(../../../public/assets/images/produtos/produto-background.jpg);
+        
+        .figure-produtos-imgs {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+
+            .img-produtos {
+                width: auto;
+                height: 70%;
+            }
+
+            .article-produtos-titulo {
+                width: auto;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+        }
+    }
+}

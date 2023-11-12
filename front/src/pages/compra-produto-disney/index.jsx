@@ -36,6 +36,15 @@ export default function CompraProdutoDisney() {
 
                     </section>
 
+                    <section className="section-produto-disney-descricao">
+
+                        <h4 className='h4-produto-disney'>Descrição</h4>
+
+                        <p className='p-produto-disney'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, impedit quia mollitia quos, rerum tenetur explicabo quas nostrum atque corporis quasi eligendi facere voluptatum delectus ullam labore laboriosam corrupti commodi.</p>
+                        
+
+                    </section>
+
                 </main>
 
                 <div className='div-produto-disney-direito'></div>
