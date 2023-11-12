@@ -29,7 +29,7 @@ root.render(
         <Route path="/compra-produto-disney" element={<CompraProdutoDisney />} />
         <Route path="/listagem" element={<Listagem />} />
         <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/escolha-cadastro-produto" element={<EscolhaCadAlt />} />
+        <Route path="/escolha-cadastro-alteracao" element={<EscolhaCadAlt />} />
         <Route path="/cadastro-produto" element={<CadastroProduto />} />
         <Route path="/escolha-usuario-produto" element={<EscolhaUsuProd />} />
         <Route path="/alteracao-usuario" element={<AlteracaoUsuario />} />

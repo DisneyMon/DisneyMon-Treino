@@ -29,6 +29,16 @@ export default function Deletar() {
                                 
                             </article>
 
+                            <article className="article-alteracaoProduto">
+                                <input className='radio-alteracaoProduto' id='usuario' type="radio" name='escolha' />
+                                <label className='label-alteracaoProduto' for="usuario">Usuário</label>
+                            </article>
+
+                            <article className="article-alteracaoProduto">
+                                <input className='radio-alteracaoProduto' id='produto' type="radio" name='escolha' />
+                                <label className='label-alteracaoProduto' for="produto">Produto</label>
+                            </article>
+
                             </section>
 
                         </section>
