@@ -50,7 +50,7 @@ A empresa cresceu ao longo dos anos seguintes, com o lançamento de animações 
                 </section>
 
                 <section className='section-section3-cards-container section-section3-cards-container-1card'>
-                    <Figure6/>
+                    <Figure4/>
                 </section>
 
             </section>

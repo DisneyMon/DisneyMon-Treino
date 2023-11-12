@@ -1,0 +1,22 @@
+@import '../../components/variaveis/index';
+
+.main-erro {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .h1-erro {
+        font: $irishGrover-96;
+    }
+
+    .h2-erro {
+        font: $irishGrover-36;
+    }
+
+    .button-erro {
+        width: 400px;
+    }
+}
