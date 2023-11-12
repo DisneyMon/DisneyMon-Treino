@@ -15,8 +15,8 @@ export default function EscolhaCadAlt() {
         else if (document.getElementById('alteracao').checked) {
             navigate('/escolha-usuario-produto')
         }
-        else {
-            
+        else if (document.getElementById('deletar').checked){
+            navigate('/deletar')
     }
 }
 
@@ -44,6 +44,11 @@ export default function EscolhaCadAlt() {
                             <article className="article-escolha">
                                 <input className='radio-escolha' id='alteracao' type="radio" name='escolha' />
                                 <label className='label-escolha' for="alteracao">Alteração</label>
+                            </article>
+
+                            <article className="article-escolha">
+                                <input className='radio-escolha' id='deletar' type="radio" name='escolha' />
+                                <label className='label-escolha' for="deletar">Deletar</label>
                             </article>
 
                         </section>

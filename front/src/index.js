@@ -16,6 +16,7 @@ import AlteracaoProduto from './pages/alteracao-produto/alteracaoProduto';
 import Sobre from './pages/sobre/sobre';
 import CompraProdutoPokemon from './pages/compra-produto-pokemon';
 import Produtos from './pages/produtos/produtos';
+import Deletar from './pages/deletar/deletar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,6 +37,7 @@ root.render(
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/compra-produto-pokemon" element={<CompraProdutoPokemon />} />
         <Route path="/produtos" element={<Produtos />} />
+        <Route path="/deletar" element={<Deletar />} />
         
       </Routes>
     </BrowserRouter>
