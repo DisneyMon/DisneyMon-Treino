@@ -20,6 +20,7 @@ export default function Cadastro() {
         try {
             let response = await axios.post("http://localhost:8080/usuarios/", body)
             alert(`Bem vindo ${response.data.nome}, seu id é ${response.data.idUsuario}`)
+            localStorage.setItem("admin", response.data.admin)
             navigate("/")
         } catch (error) {
             alert(`Erro ao tentar cadastrar`)

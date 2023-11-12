@@ -5,22 +5,6 @@ import axios from 'axios';
 
 export default function Section2() {
 
-    const [dados, setDados] = useState([])
-
-    useEffect(() => {
-        const carregarDadosDaAPI = async () => {
-          try {
-            
-            const resposta = await axios.get('http://localhost:8080/produtos/');
-            setDados(resposta.data);
-            
-          } catch (erro) {
-            console.error('Erro ao carregar dados da API:', erro);
-          }
-        };
-        carregarDadosDaAPI();
-    }, [])
-
     return (
 
         <div className="section2">
@@ -60,9 +44,7 @@ export default function Section2() {
 
                 {/* > 1250px Tamanho normal com 3 cards*/}
                 <section className='section-section2-cards-container'>
-                    {dados.map((produto) => (
-                        <Card nome={produto.nome} preco={produto.preco} imagemUrl={produto.imagemUrl} descricao={produto.descricao}/>
-                    ))} 
+                    
                 </section>
 
                 {/* < 1250px && > 900 tamanho com 2 cards

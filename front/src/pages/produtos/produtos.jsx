@@ -1,8 +1,26 @@
 import './produtos.scss'
 import Header from '../../components/global/header/header'
 import Card from '../../components/global/card/card'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 export default function Produtos() {
+
+    const [dados, setDados] = useState([])
+
+    useEffect(() => {
+        const carregarDadosDaAPI = async () => {
+          try {
+            
+            const resposta = await axios.get('http://localhost:8080/produtos/');
+            setDados(resposta.data);
+            
+          } catch (erro) {
+            console.error('Erro ao carregar dados da API:', erro);
+          }
+        };
+        carregarDadosDaAPI();
+    }, [])
 
     return (
 
@@ -25,19 +43,9 @@ export default function Produtos() {
             <main className="main-produtos">
                 <section className="section-produtos">
 
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                {dados.map((produto) => (
+                        <Card nome={produto.nome} preco={produto.preco} imagemUrl={produto.imagemUrl} descricao={produto.descricao}/>
+                    ))} 
 
                 </section>
             </main>
