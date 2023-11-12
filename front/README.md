@@ -1,70 +1,73 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p align="center">
+  <img src="https://i.imgur.com/ojneFe5.png" alt="Imagem logo" />
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
+# Disney's magical world and Pokémon's enthralling universe
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Welcome to Disneymon, a unique fusion of Disney's magical world and Pokémon's enthralling universe. This website, crafted with React JavaScript and SCSS (Sass), showcases a collection of products that blend the enchantment of Disney characters with the adventure of Pokémon.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Live Demo
+Experience Disneymon [Live] Explore the interactive features and design elements that bring this Disney and Pokémon fusion to life.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Features
 
-### `npm run build`
+* Disney and Pokémon Integration: Discover a range of products that creatively merge Disney characters with Pokémon.
+* Built with React JS: Experience a smooth, user-friendly interface.
+* Styled with SCSS: Enjoy a sleek, modern design, with an elegant and efficient stylesheet.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To set up the project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/DisneyMon/DisneyMon.git
+```
+2. Enter the directory: 
+```bash
+cd DisneyMon
+```
+3. Install dependencies:
+```bash
+pnpm i && pnpm build
+```
+4. Start the project:
+```bash
+pnpm start
+``` 
+This will launch the development server and open the project in your default browser.
 
-### `npm run eject`
+### Backend (Java with Spring Boot and MySQL)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The backend of Disneymon is developed using Java with Spring Boot and utilizes a MySQL database. Follow these steps to run the backend using IntelliJ IDEA:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Open IntelliJ IDEA and select "File" -> "Open" to open the backend project directory.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Navigate to the backend directory within the project.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Make sure you have MySQL installed and create a database for Disneymon. Update the database configuration in `src/main/resources/application.properties` with your database credentials.
 
-## Learn More
+4. Build the backend project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Run the Spring Boot application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Once the backend is up and running, it will serve data to the frontend, allowing you to explore various Disney and Pokémon-themed products, filter by categories, and delve into the unique character blends.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Usage
+Once the project is up and running, you can explore various Disney and Pokémon-themed products, filter by categories, and delve into the unique character blends.
 
-### Analyzing the Bundle Size
+## Contributions
+Contributions are always welcome! If you have ideas to enhance the project, feel free to fork the repository and submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Feel free to modify any part of this template to better suit the specifics of your Disneymon project!
 
-### Making a Progressive Web App
+[Live]:https://disneymon.vercel.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
