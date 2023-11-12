@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './cadastroProduto.scss'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
 
 export default function CadastroProduto() {
+
 
     const [nome, setNome] = useState("")
     const [preco, setPreco] = useState("")
@@ -10,11 +12,14 @@ export default function CadastroProduto() {
     const [descricao, setDescricao] = useState("")
     const [tipo, setTipo] = useState("")
 
-    // useEffect(() => {
-    //     if(!isAdmin){
-    //         navigate("/Erro")
-    //     }
-    // }, [])
+    const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(isAdmin === false){
+            navigate("/Erro")
+        }
+    }, [])
     
     async function cadastroProduto(event){
         event.preventDefault()

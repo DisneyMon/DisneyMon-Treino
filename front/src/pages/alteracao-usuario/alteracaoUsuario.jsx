@@ -1,19 +1,24 @@
 import axios from 'axios'
 import './alteracaoUsuario.scss'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function AlteracaoUsuario() {
+
 
     const [email, setEmail] = useState("")
     const [senha, setSenha] = useState("")
     const [nome, setNome] = useState("")
     const [id, setId] = useState("")
 
-    // useEffect(() => {
-    //     if(!isAdmin){
-    //         navigate("/Erro")
-    //     }
-    // }, [])
+    const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(isAdmin === false){
+            navigate("/Erro")
+        }
+    }, [])
     
     async function updateUsuario(event){
         event.preventDefault()

@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './alteracaoProduto.scss'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
 
 export default function AlteracaoProduto() {
+
 
     const [nome, setNome] = useState("")
     const [preco, setPreco] = useState("")
@@ -11,11 +13,14 @@ export default function AlteracaoProduto() {
     const [tipo, setTipo] = useState("")
     const [id, setId] = useState("")
 
-    // useEffect(() => {
-    //     if(!isAdmin){
-    //         navigate("/Erro")
-    //     }
-    // }, [])
+    const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(isAdmin === false){
+            navigate("/Erro")
+        }
+    }, [])
     
     async function updateProduto(event){
         event.preventDefault()

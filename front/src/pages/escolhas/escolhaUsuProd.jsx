@@ -1,14 +1,17 @@
 import { useNavigate } from 'react-router-dom';
 import './escolha.scss'
+import { useEffect } from 'react';
 
 export default function EscolhaUsuProd() {
 
+    const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
     const navigate = useNavigate();
-    // useEffect(() => {
-    //     if(!isAdmin){
-    //         navigate("/Erro")
-    //     }
-    // }, [])
+
+    useEffect(() => {
+        if(isAdmin === false){
+            navigate("/Erro")
+        }
+    }, [])
     
     function escolhaUsuarioProduto() {
 

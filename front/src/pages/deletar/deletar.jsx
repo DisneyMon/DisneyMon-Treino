@@ -1,14 +1,18 @@
 import axios from 'axios'
 import './deletar.scss'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function Deletar() {
 
-    // useEffect(() => {
-    //     if(!isAdmin){
-    //         navigate("/Erro")
-    //     }
-    // }, [])
+    const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(isAdmin === false){
+            navigate("/Erro")
+        }
+    }, [])
 
     const [tipo, setTipo] = useState("")
     const [id, setId] = useState("")

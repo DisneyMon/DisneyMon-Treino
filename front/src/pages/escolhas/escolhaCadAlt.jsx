@@ -1,16 +1,18 @@
 import './escolha.scss'
 
 import { Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function EscolhaCadAlt() {
+
+    const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     if(!isAdmin){
-    //         navigate("/Erro")
-    //     }
-    // }, [])
+    useEffect(() => {
+        if(isAdmin === false){
+            navigate("/Erro")
+        }
+    }, [])
 
     function escolhaCadProd() {
 
