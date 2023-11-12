@@ -43,7 +43,7 @@ A empresa cresceu ao longo dos anos seguintes, com o lançamento de animações 
                     <Figure6/>
                 </section>
 
-                {/* < 1250px && > 900 tamanho com 2 cards*/}
+                {/* < 1250px && > 820 tamanho com 2 cards*/}
                 <section className='section-section3-cards-container section-section3-cards-container-2cards'>
                     <Figure4/>
                     <Figure5/>

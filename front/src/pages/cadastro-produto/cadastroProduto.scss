@@ -77,6 +77,16 @@
                         gap: 10px;
                         display: flex;
                         align-items: center;
+
+                        .select-cadastroProduto {
+                            width: 250px;
+                            height: 50px;
+                            background-color: white;
+                            border: 1px solid black;
+                            font: $irishGrover-20;
+                            padding: 2px;
+                            margin-right: 50px;
+                        }
         
                         .radio-cadastroProduto {
                             cursor: pointer;

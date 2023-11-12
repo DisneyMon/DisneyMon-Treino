@@ -70,7 +70,7 @@ export default function CadastroProduto() {
                             </article>
 
                             <article className="article-cadastroProduto">
-                                <select id="selecao" value={tipo} onChange={event => setTipo(event.target.value)}>
+                                <select className='select-cadastroProduto' id="selecao" value={tipo} onChange={event => setTipo(event.target.value)}>
                                     <option value="Disney">Disney</option>
                                     <option value="Pokemon">Pokemon</option>
                                 </select>

@@ -49,7 +49,7 @@ export default function Section2() {
                     <Figure3/>
                 </section>
 
-                {/* < 1250px && > 900 tamanho com 2 cards*/}
+                {/* < 1250px && > 820 tamanho com 2 cards*/}
                 <section className='section-section2-cards-container section-section2-cards-container-2cards'>
                     <Figure1/>
                     <Figure2/>
