@@ -1,7 +1,7 @@
 import './section2.scss'
-import Card from '../../global/card/card.jsx';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import Figure1 from '../../figures/figure1/index'
+import Figure2 from '../../figures/figure2/index'
+import Figure3 from '../../figures/figure3/index'
 
 export default function Section2() {
 
@@ -44,18 +44,20 @@ export default function Section2() {
 
                 {/* > 1250px Tamanho normal com 3 cards*/}
                 <section className='section-section2-cards-container'>
-                    
+                    <Figure1/>
+                    <Figure2/>
+                    <Figure3/>
                 </section>
 
-                {/* < 1250px && > 900 tamanho com 2 cards
+                {/* < 1250px && > 900 tamanho com 2 cards*/}
                 <section className='section-section2-cards-container section-section2-cards-container-2cards'>
-                    <Card/>
-                    <Card/>
+                    <Figure1/>
+                    <Figure2/>
                 </section>
 
                 <section className='section-section2-cards-container section-section2-cards-container-1card'>
-                    <Card/>
-                </section> */}
+                    <Figure1/>
+                </section>
 
                 <div className='div-section2-area-bolinha'>
                     <div className='div-section2-bolinha'>

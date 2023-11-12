@@ -1,5 +1,8 @@
 import './section3.scss';
-import Card from '../../global/card/card.jsx';
+
+import Figure4 from '../../figures/figure4/index.jsx';
+import Figure5 from '../../figures/figure5/index.jsx';
+import Figure6 from '../../figures/figure6/index.jsx';
 
 export default function Section3() {
 
@@ -35,19 +38,19 @@ A empresa cresceu ao longo dos anos seguintes, com o lançamento de animações 
 
                 {/* > 1250px Tamanho normal com 3 cards*/}
                 <section className='section-section3-cards-container'>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    <Figure4/>
+                    <Figure5/>
+                    <Figure6/>
                 </section>
 
                 {/* < 1250px && > 900 tamanho com 2 cards*/}
                 <section className='section-section3-cards-container section-section3-cards-container-2cards'>
-                    <Card/>
-                    <Card/>
+                    <Figure4/>
+                    <Figure5/>
                 </section>
 
                 <section className='section-section3-cards-container section-section3-cards-container-1card'>
-                    <Card/>
+                    <Figure6/>
                 </section>
 
             </section>
