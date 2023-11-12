@@ -20,3 +20,45 @@
         width: 400px;
     }
 }
+
+@media (max-width: 450px) {
+
+    .main-erro {
+        
+    
+        .h1-erro {
+            font: $irishGrover-60;
+        }
+    
+        .h2-erro {
+            font: $irishGrover-23;
+        }
+    
+        .button-erro {
+            font: $irishGrover-23;
+            width: 250px;
+        }
+    }
+
+}
+
+@media (max-width: 250px) {
+
+    .main-erro {
+        
+    
+        .h1-erro {
+            font: $irishGrover-25;
+        }
+    
+        .h2-erro {
+            font: $irishGrover-17;
+        }
+    
+        .button-erro {
+            font: $irishGrover-17;
+            width: 100px;
+        }
+    }
+
+}

@@ -31,19 +31,19 @@ Seja você um fã da Disney, um treinador Pokémon ou ambos, a Disneymon é o se
 
                 <section className="section-sobre-disney">
                     <figure className='figure-sobre'>
-                        <img className='img-sobre' src="/assets/images/sobre/sobre-mickey.gif" alt="" />
-                        <img className='img-sobre' src="/assets/images/sobre/sobre-et.gif" alt="" />
-                        <img className='img-sobre' src="/assets/images/sobre/sobre-monstro.gif" alt="" />
-                        <img className='img-sobre' src="/assets/images/sobre/sobre-donald.gif" alt="" />
+                        <img className='img-sobre img-sobre-mickey' src="/assets/images/sobre/sobre-mickey.gif" alt="" />
+                        <img className='img-sobre img-sobre-et' src="/assets/images/sobre/sobre-et.gif" alt="" />
+                        <img className='img-sobre img-sobre-monstro' src="/assets/images/sobre/sobre-monstro.gif" alt="" />
+                        <img className='img-sobre img-sobre-donald' src="/assets/images/sobre/sobre-donald.gif" alt="" />
                     </figure>
                 </section>
 
                 <section className="section-sobre-pokemon">
                     <figure className='figure-sobre'>
-                        <img className='img-sobre' src="/assets/images/sobre/sobre-picachu.gif" alt="" />
-                        <img className='img-sobre' src="/assets/images/sobre/sobre-cherry.gif" alt="" />
-                        <img className='img-sobre' src="/assets/images/sobre/sobre-bulbasaur.gif" alt="" />
-                        <img className='img-sobre' src="/assets/images/sobre/sobre-snorlax.gif" alt="" />
+                        <img className='img-sobre img-sobre-picachu' src="/assets/images/sobre/sobre-picachu.gif" alt="" />
+                        <img className='img-sobre img-sobre-cherry' src="/assets/images/sobre/sobre-cherry.gif" alt="" />
+                        <img className='img-sobre img-sobre-bulbasaur' src="/assets/images/sobre/sobre-bulbasaur.gif" alt="" />
+                        <img className='img-sobre img-sobre-snorlax' src="/assets/images/sobre/sobre-snorlax.gif" alt="" />
                     </figure>
                 </section>
 

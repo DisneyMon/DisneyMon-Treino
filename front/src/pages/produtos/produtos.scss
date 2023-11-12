@@ -18,7 +18,7 @@
 
             .img-produtos {
                 width: auto;
-                height: 70%;
+                height: 60%;
             }
 
             .article-produtos-titulo {
@@ -59,4 +59,85 @@
             background-color: white;
         }
     }
+}
+
+@media (max-width: 900px) {
+
+    .page-produtos {
+    
+        .header-produtos {
+            
+            .figure-produtos-imgs {
+
+                .img-produtos {
+                    width: auto;
+                    height: 50%;
+                }
+    
+                .article-produtos-titulo {
+    
+                    .h1-produtos{
+                        width: 100%;
+                        font: $irishGrover-65;
+                        
+                    }
+    
+                    .h4-produtos {
+
+                        font: $irishGrover-25;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 680px) {
+
+    .page-produtos {
+    
+        .header-produtos {
+            
+            .figure-produtos-imgs {
+
+                .img-produtos {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 680px) {
+
+    .page-produtos {
+    
+        .header-produtos {
+            
+            .figure-produtos-imgs {
+
+                .img-produtos {
+                    width: auto;
+                    height: 50%;
+                }
+    
+                .article-produtos-titulo {
+    
+                    .h1-produtos{
+                        width: 100%;
+                        font: $irishGrover-36;
+                        
+                    }
+    
+                    .h4-produtos {
+                        font: $irishGrover-17;
+
+                    }
+                }
+            }
+        }
+    }
+
 }
