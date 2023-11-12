@@ -18,7 +18,6 @@ public class Produto implements Serializable {
     private double preco;
     private String imagemUrl;
     private String descricao;
-
     private String tipo;
 
     public Produto(){}
