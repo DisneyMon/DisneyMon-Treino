@@ -1,0 +1,183 @@
+@import '../../components/variaveis/index';
+
+.alteracaoProduto-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-alteracaoProduto {
+        width: 60%;
+        height: 80%;
+        min-width: 921.6px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #EFE232;
+        border-radius: 60px;
+
+        .figure-alteracaoProduto-direito{
+            width: 15%;
+            height: 100%;
+            background-image: url(../../../public/assets/images/cadastro/background-cadastro.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-right-radius: 60px;
+            border-bottom-right-radius: 60px;
+
+        }
+
+        .figure-alteracaoProduto-esquerdo{
+            width: 15%;
+            height: 100%;
+            background-image: url(../../../public/assets/images/login/background-login.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-left-radius: 60px;
+            border-bottom-left-radius: 60px;
+
+        }
+
+        .section-alteracaoProduto {
+            width: 70%;
+            height: 100%;
+            min-width: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to left, #ebebc9 50%, #96d0e8 50%);
+            
+            .section-alteracaoProduto-form {
+                width: 100%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .teste {
+                    width: 95%;
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    overflow-y: hidden;
+                    gap: 50px;
+
+                    .article-alteracaoProduto-input {
+                        display: flex;
+                        flex-direction: column;
+
+                        .label-alterarProduto {
+                            font: $irishGrover-23;
+                        }
+                    }
+
+                    .article-alteracaoProduto {
+                        gap: 10px;
+                        display: flex;
+                        align-items: center;
+        
+                        .radio-alteracaoProduto {
+                            cursor: pointer;
+                            appearance: none;
+                            width: 30px;
+                            height: 30px;
+                            border: 3px solid  black;
+                            border-radius: 50%;
+                            position: relative;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            outline: none;
+                        }
+        
+                        .radio-alteracaoProduto:before {
+                            content: '';
+                            width: 15px;
+                            height: 15px;
+                            background:  black;
+                            border-radius: 50%;
+                            opacity: 0;
+                            transition: all 600ms ease-in-out;
+                            position: absolute;
+                        }
+        
+                        .radio-alteracaoProduto:checked:before {
+                            opacity: 1;
+                        }
+        
+                        .radio-alteracaoProduto:focus {
+                            box-shadow: 0 0 5px  black;
+                        }
+        
+                        .label-alteracaoProduto {
+                            color:  black;
+                            font: $inter-20;
+                        }
+                    }
+                }
+
+                .h1-alteracaoProduto {
+                    font: $irishGrover-60;
+                    color: black;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    overflow-y: hidden;
+                }
+            }
+        }
+
+        .figure-alteracaoProduto-2 {
+            display: none;
+        }
+    }
+}
+
+
+@media (min-width: 3000px) {
+
+    .alteracaoProduto-page {
+
+        .main-alteracaoProduto {
+            
+            .section-alteracaoProduto{
+                
+                
+                .section-alteracaoProduto-form {
+                    
+    
+                    .h1-alteracaoProduto {
+                        font: $irishGrover-120;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .alteracaoProduto-page {
+
+        .main-alteracaoProduto {
+            min-width: 520px;
+    
+            .figure-alteracaoProduto{
+                width: 30%;
+                min-width: 100px;
+    
+            }
+
+            .figure-alteracaoProduto-2 {
+                display: flex;
+                border-top-left-radius: 60px;
+                border-bottom-left-radius: 60px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+    }
+} 

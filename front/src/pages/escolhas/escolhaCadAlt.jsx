@@ -3,7 +3,7 @@ import './escolha.scss'
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function Escolha() {
+export default function EscolhaCadAlt() {
     const navigate = useNavigate();
 
     function escolhaCadProd() {

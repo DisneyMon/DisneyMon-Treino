@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import './escolhaUsuProd.scss'
+import './escolha.scss'
 
 export default function EscolhaUsuProd() {
 

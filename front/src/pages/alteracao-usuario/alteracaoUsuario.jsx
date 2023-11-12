@@ -4,43 +4,45 @@ export default function AlteracaoUsuario() {
 
     return (
 
-        <div className="cadastroProduto-page">
+        <div className="alteracaoUsuario-page">
 
-            <main className="main-cadastroProduto">
+            <main className="main-alteracaoUsuario">
 
-                <figure className="figure-cadastroProduto-direito"></figure>
+                <figure className="figure-alteracaoUsuario-direito"></figure>
 
-                <section className="section-cadastroProduto">
+                <section className="section-alteracaoUsuario">
 
-                    <section className="section-cadastroProduto-form">
+                    <section className="section-alteracaoUsuario-form">
 
-                        <h1 className="h1-cadastroProduto">Alteração Usuário</h1>
+                        <h1 className="h1-alteracaoUsuario">Alteração Usuário</h1>
 
                         <form className='teste'>
 
-                            <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Id</label>
-                                <input type="text" />
-                                <button>Pesquisar</button>
+                            <article className='article-alteracaoUsuario-input'>
+                                <label className='label-alteracaoUsuario' htmlFor="">Id</label>
+                                <div className="div-id">
+                                <input className='input-id' type="text" />
+                                <button className='button-id'>Ok</button>
+                                </div>
                             </article>
 
-                            <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Nome</label>
-                                <input type="text" />
+                            <article className='article-alteracaoUsuario-input'>
+                                <label className='label-alteracaoUsuario' htmlFor="">Nome</label>
+                                <input  type="text" />
                             </article>
 
-                            <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Email</label>
-                                <input type="number" />
-                            </article>
-
-                            <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Senha</label>
+                            <article className='article-alteracaoUsuario-input'>
+                                <label className='label-alteracaoUsuario' htmlFor="">Email</label>
                                 <input type="text" />
                             </article>
 
+                            <article className='article-alteracaoUsuario-input'>
+                                <label className='label-alteracaoUsuario' htmlFor="">Senha</label>
+                                <input type="text" />
+                            </article>
 
-                            <button>Cadastrar</button>
+
+                            <button>Alterar</button>
 
                         </form>
                         
@@ -49,9 +51,9 @@ export default function AlteracaoUsuario() {
 
                 </section>
 
-                <figure className="figure-cadastroProduto-esquerdo"></figure>
+                <figure className="figure-alteracaoUsuario-esquerdo"></figure>
 
-                <figure className="figure-cadastroProduto figure-cadastroProduto-2"></figure>
+                <figure className="figure-alteracaoUsuario figure-alteracaoUsuario-2"></figure>
 
             </main>
 

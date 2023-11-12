@@ -4,57 +4,60 @@ export default function AlteracaoProduto() {
 
     return (
 
-        <div className="cadastroProduto-page">
+        <div className="alteracaoProduto-page">
 
-            <main className="main-cadastroProduto">
+            <main className="main-alteracaoProduto">
 
-                <figure className="figure-cadastroProduto-direito"></figure>
+                <figure className="figure-alteracaoProduto-direito"></figure>
 
-                <section className="section-cadastroProduto">
+                <section className="section-alteracaoProduto">
 
-                    <section className="section-cadastroProduto-form">
+                    <section className="section-alteracaoProduto-form">
 
-                        <h1 className="h1-cadastroProduto">Cadastro de Produtos</h1>
+                        <h1 className="h1-alteracaoProduto">Alterar Produto</h1>
 
                         <form className='teste'>
 
-                        <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Id</label>
-                                <input type="text" />
-                                <button>Pesquisar</button>
+                        <article className='article-alteracaoProduto-input'>
+                                <label className='label-alterarProduto' htmlFor="">Id</label>
+                                <div className="div-id">
+                                    <input className='input-id' type="text" />
+                                    <button className='button-id'>Ok</button>
+                                </div>
+                                
                             </article>
 
-                            <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Nome do Produto</label>
+                            <article className='article-alteracaoProduto-input'>
+                                <label className='label-alterarProduto' htmlFor="">Nome do Produto</label>
                                 <input type="text" />
                             </article>
 
-                            <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Preço</label>
+                            <article className='article-alteracaoProduto-input'>
+                                <label className='label-alterarProduto' htmlFor="">Preço</label>
                                 <input type="number" />
                             </article>
 
-                            <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Imagem Link</label>
+                            <article className='article-alteracaoProduto-input'>
+                                <label className='label-alterarProduto' htmlFor="">Imagem Link</label>
                                 <input type="text" />
                             </article>
 
-                            <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Descrição</label>
+                            <article className='article-alteracaoProduto-input'>
+                                <label className='label-alterarProduto' htmlFor="">Descrição</label>
                                 <input type="text" />
                             </article>
 
-                            <article className="article-cadastroProduto">
-                                <input className='radio-cadastroProduto' id='cadastro' type="radio" name='escolha' />
-                                <label className='label-cadastroProduto' for="cadastro">Disney</label>
+                            <article className="article-alteracaoProduto">
+                                <input className='radio-alteracaoProduto' id='cadastro' type="radio" name='escolha' />
+                                <label className='label-alteracaoProduto' for="cadastro">Disney</label>
                             </article>
 
-                            <article className="article-cadastroProduto">
-                                <input className='radio-cadastroProduto' id='alteracao' type="radio" name='escolha' />
-                                <label className='label-cadastroProduto' for="alteracao">Pokémon</label>
+                            <article className="article-alteracaoProduto">
+                                <input className='radio-alteracaoProduto' id='alteracao' type="radio" name='escolha' />
+                                <label className='label-alteracaoProduto' for="alteracao">Pokémon</label>
                             </article>
 
-                            <button>Cadastrar</button>
+                            <button>Alterar</button>
 
                         </form>
                         
@@ -63,9 +66,9 @@ export default function AlteracaoProduto() {
 
                 </section>
 
-                <figure className="figure-cadastroProduto-esquerdo"></figure>
+                <figure className="figure-alteracaoProduto-esquerdo"></figure>
 
-                <figure className="figure-cadastroProduto figure-cadastroProduto-2"></figure>
+                <figure className="figure-alteracaoProduto figure-alteracaoProduto-2"></figure>
 
             </main>
 

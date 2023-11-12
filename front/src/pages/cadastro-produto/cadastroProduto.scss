@@ -50,7 +50,7 @@
             
             .section-cadastroProduto-form {
                 width: 100%;
-                height: 100%;
+                height: 90%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -67,6 +67,10 @@
                     .article-cadastroProduto-input {
                         display: flex;
                         flex-direction: column;
+
+                        .label-cadastroProduto {
+                            font: $irishGrover-23;
+                        }
                     }
 
                     .article-cadastroProduto {

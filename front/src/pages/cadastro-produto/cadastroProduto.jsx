@@ -19,22 +19,22 @@ export default function CadastroProduto() {
                         <form className='teste'>
 
                             <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Nome do Produto</label>
+                                <label className='label-cadastroProduto' htmlFor="">Nome do Produto</label>
                                 <input type="text" />
                             </article>
 
                             <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Preço</label>
+                                <label className='label-cadastroProduto' htmlFor="">Preço</label>
                                 <input type="number" />
                             </article>
 
                             <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Imagem Link</label>
+                                <label className='label-cadastroProduto' htmlFor="">Imagem Link</label>
                                 <input type="text" />
                             </article>
 
                             <article className='article-cadastroProduto-input'>
-                                <label htmlFor="">Descrição</label>
+                                <label className='label-cadastroProduto' htmlFor="">Descrição</label>
                                 <input type="text" />
                             </article>
 
