@@ -18,7 +18,6 @@ export default function CadastroProduto() {
     
     async function cadastroProduto(event){
         event.preventDefault()
-        setTipo(document.getElementsByName("escolha").values)
         let body = {
             nome: nome,
             preco: preco,
@@ -31,15 +30,6 @@ export default function CadastroProduto() {
             alert(`Produto cadastrado com sucesso`)
         } catch (error) {
             alert(`Erro ao tentar cadastrar`)
-        }
-    }
-
-    function selecionarTipo() {
-        if (document.getElementById('disney').checked) {
-            setTipo("Disney")
-        }
-        else if (document.getElementById('pokemon').checked) {
-            setTipo("Pokemon")
         }
     }
 
@@ -80,13 +70,10 @@ export default function CadastroProduto() {
                             </article>
 
                             <article className="article-cadastroProduto">
-                                <input className='radio-cadastroProduto' id='disney' type="radio" name='escolha' />
-                                <label className='label-cadastroProduto' for="disney">Disney</label>
-                            </article>
-
-                            <article className="article-cadastroProduto">
-                                <input className='radio-cadastroProduto' id='pokemon' type="radio" name='escolha' />
-                                <label className='label-cadastroProduto' for="pokemon">Pokémon</label>
+                                <select id="selecao" value={tipo} onChange={event => setTipo(event.target.value)}>
+                                    <option value="Disney">Disney</option>
+                                    <option value="Pokemon">Pokemon</option>
+                                </select>
                             </article>
 
                             <button onClick={cadastroProduto}>Cadastrar</button>
