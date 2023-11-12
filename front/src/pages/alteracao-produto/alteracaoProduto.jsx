@@ -44,7 +44,7 @@ export default function AlteracaoProduto() {
         try {
             let response = await axios.get(`http://localhost:8080/produtos/${id}`)
             if(!response.data){
-                alert("Essa pessoa não existe")
+                alert("Esse Produto não existe")
                 setImagemUrl("")
                 setNome("")
                 setDescricao("")

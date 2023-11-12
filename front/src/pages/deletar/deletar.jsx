@@ -1,6 +1,27 @@
+import axios from 'axios'
 import './deletar.scss'
+import { useState } from 'react'
 
 export default function Deletar() {
+
+    // useEffect(() => {
+    //     if(!isAdmin){
+    //         navigate("/Erro")
+    //     }
+    // }, [])
+
+    const [tipo, setTipo] = useState("")
+    const [id, setId] = useState("")
+
+    async function deletar(event){
+        event.preventDefault()
+        try {
+            let response = await axios.delete(`http://localhost:8080/${tipo}/${id}`)
+            alert(`Delete do tipo ${tipo} realizado com sucesso`)
+        } catch (error) {
+            alert(`Erro ao tentar buscar`)
+        }
+    }
 
     return (
 
@@ -23,20 +44,17 @@ export default function Deletar() {
                             <article className='article-deletar-input'>
                                 <label className='label-deletar' htmlFor="">Id</label>
                                 <div className="div-id">
-                                    <input className='input-id' type="number" />
-                                    <button className='button-id'>Ok</button>
+                                    <input className='input-id' type="number" value={id} onChange={event => setId(event.target.value)}/>
+                                    <button className='button-id' onClick={deletar}>Ok</button>
                                 </div>
                                 
                             </article>
 
-                            <article className="article-alteracaoProduto">
-                                <input className='radio-alteracaoProduto' id='usuario' type="radio" name='escolha' />
-                                <label className='label-alteracaoProduto' for="usuario">Usuário</label>
-                            </article>
-
-                            <article className="article-alteracaoProduto">
-                                <input className='radio-alteracaoProduto' id='produto' type="radio" name='escolha' />
-                                <label className='label-alteracaoProduto' for="produto">Produto</label>
+                            <article className="article-cadastroProduto">
+                                <select className='select-cadastroProduto' id="selecao" value={tipo} onChange={event => setTipo(event.target.value)}>
+                                    <option value="usuarios">Usuarios</option>
+                                    <option value="produtos">Produtos</option>
+                                </select>
                             </article>
 
                             </section>
