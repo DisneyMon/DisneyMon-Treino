@@ -15,7 +15,7 @@ export default function Header() {
                     </figure>
                 </Link>
                 <nav className="nav-section1">
-                    <Link to="/contato"><p className="p-section1 p-section1-amarelo">Contato</p></Link>
+                    <Link to="/escolha-cadastro-alteracao"><p className="p-section1 p-section1-amarelo">Gerenciamento</p></Link>
                     <Link to="/sobre"><p className="p-section1 p-section1-azul">Sobre</p></Link>
                     <Link className='Link-header' to="/">
                         <figure className='figure-section1'>
