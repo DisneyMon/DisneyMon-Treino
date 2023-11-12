@@ -1,33 +1,33 @@
 @import '../../components/variaveis/index';
 
-.page-produto-disney {
+.page-produto-pokemon {
     width: 100vw;
     height: 120vh;
-    background-color: #C2E4E2;
+    background-color: #ebebc9;
 
-    .Header-produto-disney {
+    .Header-produto-pokemon {
         display: flex;
         position: absolute;
     }
 
-    .section-produto-disney-coluna {
+    .section-produto-pokemon-coluna {
         width: 100%;
         height: 100%;
         display: flex;
 
-        .div-produto-disney-esquerdo {
+        .div-produto-pokemon-esquerdo {
             width: 9%;
             height: 100%;
-            background-image: url("../../../public/assets/images/login/background-login.jpeg");
+            background-image: url("../../../public/assets/images/cadastro/background-cadastro.jpg");
             background-size: cover;
         }
 
-        .main-produto-disney {
+        .main-produto-pokemon {
             width: 82%;
             display: flex;
             flex-direction: column;
 
-            .section-produto-disney-img {
+            .section-produto-pokemon-img {
                 width: 100%;
                 max-height: 505px;
                 height: 50%;
@@ -35,54 +35,54 @@
                 display: flex;
                 gap: 50px;
 
-                .figure-produto-disney {
+                .figure-produto-pokemon {
                     width: 40%;
                     height: 100%;
                     border-radius: 15px;
                     overflow-y: hidden;
 
-                    .img-produto-disney {
+                    .img-produto-pokemon {
                         width: 100%;
                         height: 100%;
                     }
                 }
 
-                .section-produto-disney-titulo {
+                .section-produto-pokemon-titulo {
                     width: 60%;
                     height: auto;
                     display: flex;
                     flex-direction: column;
 
-                    .h2-produto-disney {
+                    .h2-produto-pokemon {
                         font: $irishGrover-50;
                         overflow-y: hidden;
                     }
 
-                    .div-produto-disney-linha {
+                    .div-produto-pokemon-linha {
                         width: 100%;
                         height: 1px;
                         background-color: black;
                     }
 
-                    .h1-produto-disney {
+                    .h1-produto-pokemon {
                         font: $irishGrover-65;
                         overflow-y: hidden;
                     
                     }
 
-                    .h3-produto-disney {
+                    .h3-produto-pokemon {
                         font: $inter-20;
                         overflow-y: hidden;
                     }
 
-                    .section-produto-disney-botao {
+                    .section-produto-pokemon-botao {
                         width: 100%;
                         height: 65.59%;
                         display: flex;
                         justify-content: flex-end;
                         align-items: flex-end;
 
-                        .button-produto-disney {
+                        .button-produto-pokemon {
                             width: 35%;
                             height: 55px;
                             border-radius: 100px;
@@ -95,25 +95,25 @@
                 }
             }
 
-            .section-produto-disney-descricao {
+            .section-produto-pokemon-descricao {
                 width: 100%;
                 height: 50%;
                 padding: 20px;
 
-                .h4-produto-disney {
+                .h4-produto-pokemon {
                     font: $irishGrover-36;
                 }
 
-                .p-produto-disney {
+                .p-produto-pokemon {
                     font: $inter-14;
                 }
             }
         }
 
-        .div-produto-disney-direito {
+        .div-produto-pokemon-direito {
             width: 9%;
             height: 100%;
-            background-image: url("../../../public/assets/images/login/background-login.jpeg");
+            background-image: url("../../../public/assets/images/cadastro/background-cadastro.jpg");
             background-size: cover;
             background-position: center;
         }
