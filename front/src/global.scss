@@ -48,6 +48,16 @@ input {
     font: $irishGrover-20;
     box-sizing: border-box;
 }
+
+select {
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    font: $irishGrover-20;
+    padding: 2px;
+}
+
 .div-id {
     height: 45px;
     display: flex;

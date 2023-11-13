@@ -160,9 +160,19 @@
 @media (max-width: 1000px) {
 
     .alteracaoUsuario-page {
+        height: auto;
 
         .main-alteracaoUsuario {
+            height: 100%;
             min-width: 520px;
+
+            .figure-alteracaoUsuario-esquerdo{
+                height: auto;
+            }
+
+            .figure-alteracaoUsuario-direito{
+                height: auto;
+            }
     
             .figure-alteracaoUsuario{
                 width: 30%;
@@ -171,11 +181,8 @@
             }
 
             .figure-alteracaoUsuario-2 {
-                display: flex;
-                border-top-left-radius: 60px;
-                border-bottom-left-radius: 60px;
-                border-top-right-radius: 0px;
-                border-bottom-right-radius: 0px;
+                display: none;
+                
             }
         }
     }

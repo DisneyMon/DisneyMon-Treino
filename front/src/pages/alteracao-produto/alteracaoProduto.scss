@@ -161,9 +161,19 @@
 @media (max-width: 1000px) {
 
     .alteracaoProduto-page {
+        height: auto;
 
         .main-alteracaoProduto {
+            width: 100%;
             min-width: 520px;
+
+            .figure-alteracaoProduto-direito{
+                height: auto;
+            }
+
+            .figure-alteracaoProduto-esquerdo{
+                height: auto;
+            }
     
             .figure-alteracaoProduto{
                 width: 30%;
@@ -172,11 +182,7 @@
             }
 
             .figure-alteracaoProduto-2 {
-                display: flex;
-                border-top-left-radius: 60px;
-                border-bottom-left-radius: 60px;
-                border-top-right-radius: 0px;
-                border-bottom-right-radius: 0px;
+                display: none;
             }
         }
     }

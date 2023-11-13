@@ -10,7 +10,7 @@ export default function AlteracaoProduto() {
     const [preco, setPreco] = useState("")
     const [imagemUrl, setImagemUrl] = useState("")
     const [descricao, setDescricao] = useState("")
-    const [tipo, setTipo] = useState("")
+    const [tipo, setTipo] = useState("Disney")
     const [id, setId] = useState("")
 
     const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;

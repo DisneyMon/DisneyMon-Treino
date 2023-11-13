@@ -14,7 +14,7 @@ export default function Deletar() {
         }
     }, [])
 
-    const [tipo, setTipo] = useState("")
+    const [tipo, setTipo] = useState("usuarios")
     const [id, setId] = useState("")
 
     async function deletar(event){

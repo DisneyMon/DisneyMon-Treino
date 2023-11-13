@@ -198,9 +198,19 @@
 @media (max-width: 1000px) {
 
     .deletar-page {
+        height: 100vh;
 
         .main-deletar {
+            height: 100%;
             min-width: 520px;
+
+            .figure-deletar-direito {
+                height: auto;
+            }
+
+            .figure-deletar-esquerdo {
+                height: auto;
+            }
     
             .figure-deletar{
                 width: 30%;
@@ -209,11 +219,8 @@
             }
 
             .figure-deletar-2 {
-                display: flex;
-                border-top-left-radius: 60px;
-                border-bottom-left-radius: 60px;
-                border-top-right-radius: 0px;
-                border-bottom-right-radius: 0px;
+                display: none;
+                
             }
         }
     }

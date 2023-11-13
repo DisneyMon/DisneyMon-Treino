@@ -30,7 +30,7 @@ export default function Card(props) {
 
                 <p className='p-card'>{props.nome}</p>
 
-                <h1 className='h1-card'>{props.preco}</h1>
+                <h1 className='h1-card'>R$ {props.preco}</h1>
 
                 <p className='p-card'><strong>R$ {props.preco * 0.8}</strong> à vista com desconto</p>
 

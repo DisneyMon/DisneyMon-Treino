@@ -12,12 +12,12 @@
 
     .section-produto-disney-coluna {
         width: 100%;
-        height: 100%;
+        height: 86%;
         display: flex;
 
         .div-produto-disney-esquerdo {
             width: 9%;
-            height: 100%;
+            height: auto;
             background-image: url("../../../public/assets/images/login/background-login.jpeg");
             background-size: cover;
         }
@@ -30,7 +30,7 @@
             .section-produto-disney-img {
                 width: 100%;
                 max-height: 505px;
-                height: 50%;
+                height: 70%;
                 padding: 20px;
                 display: flex;
                 gap: 50px;
@@ -42,6 +42,7 @@
                     overflow-y: hidden;
 
                     .img-produto-disney {
+                        border: 10px solid black;
                         width: 100%;
                         height: 100%;
                     }
@@ -54,12 +55,13 @@
                     flex-direction: column;
 
                     .h2-produto-disney {
-                        height: 80px;
+                        height: auto;
                         font: $irishGrover-50;
                         overflow-y: hidden;
                     }
 
                     .div-produto-disney-linha {
+                        
                         width: 100%;
                         height: 1px;
                         background-color: black;
@@ -98,7 +100,7 @@
 
             .section-produto-disney-descricao {
                 width: 100%;
-                height: 37%;
+                height: 30%;
                 padding: 20px;
 
                 .h4-produto-disney {
@@ -113,10 +115,215 @@
 
         .div-produto-disney-direito {
             width: 9%;
-            height: 100%;
+            height: auto;
             background-image: url("../../../public/assets/images/cadastro/background-cadastro.jpg");
             background-size: cover;
             background-position: center;
         }
     }
+}
+
+@media (max-width: 1000px) {
+
+    .page-produto-disney {
+        height: 100vh;
+    
+        .Header-produto-disney {
+            
+        }
+    
+        .section-produto-disney-coluna {
+            height: 100%;
+    
+            .div-produto-disney-esquerdo {
+                height: 120%;
+            }
+
+            .div-produto-disney-direito {
+                height: 120%;
+            }
+    
+            .main-produto-disney {
+                height: 1000px;
+    
+                .section-produto-disney-img {
+                    max-height: none;
+                    height: 70%;
+                    flex-direction: column;
+                    align-items: center;
+                    height: auto;
+                    
+    
+                    .figure-produto-disney {
+                        min-width: 300px;
+                        min-height: 300px;
+    
+                        .img-produto-disney {
+                            width: 100%;
+                            height: 100%;
+                            
+                        }
+                    }
+    
+                    .section-produto-disney-titulo {
+                        height: 1500px;
+                        
+                        
+    
+                        .h2-produto-disney {
+                            
+                        }
+    
+                        .div-produto-disney-linha {
+                            
+                            
+                        }
+    
+                        .h1-produto-disney {
+                            
+                        
+                        }
+    
+                        .h3-produto-disney {
+                            
+                        }
+    
+                        .section-produto-disney-botao {
+                            justify-content: center;
+                            align-items: flex-start;
+                            height: 100px;
+                            
+                            
+    
+                            .button-produto-disney {
+                                min-width: 160px;
+                            }
+                        }
+                    }
+                }
+    
+                .section-produto-disney-descricao {
+                    height: auto;
+                    text-align: center;
+                    
+    
+                    .h4-produto-disney {
+                        
+                    }
+    
+                    .p-produto-disney {
+                        
+                    }
+                }
+            }
+    
+            .div-produto-disney-direito {
+                
+            }
+        }
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .page-produto-disney {
+        height: 100vh;
+    
+        .Header-produto-disney {
+            
+        }
+    
+        .section-produto-disney-coluna {
+            height: 100%;
+    
+            .div-produto-disney-esquerdo {
+                height: 120%;
+            }
+
+            .div-produto-disney-direito {
+                height: 120%;
+            }
+    
+            .main-produto-disney {
+                height: 1000px;
+    
+                .section-produto-disney-img {
+                    max-height: none;
+                    height: 70%;
+                    flex-direction: column;
+                    align-items: center;
+                    height: auto;
+                    
+    
+                    .figure-produto-disney {
+                        min-width: 200px;
+                        min-height: 200px;
+                        
+                        
+    
+                        .img-produto-disney {
+                            
+                            
+                        }
+                    }
+    
+                    .section-produto-disney-titulo {
+                        height: 1500px;
+                        
+                        
+    
+                        .h2-produto-disney {
+                            font: $irishGrover-25;
+                        }
+    
+                        .div-produto-disney-linha {
+                            display: none;
+                            
+                        }
+    
+                        .h1-produto-disney {
+                            font: $irishGrover-36;
+                        
+                        }
+    
+                        .h3-produto-disney {
+                            font: $inter-14;
+                        }
+    
+                        .section-produto-disney-botao {
+                            justify-content: center;
+                            align-items: flex-start;
+                            height: 100px;
+                            
+                            
+    
+                            .button-produto-disney {
+                                min-width: 160px;
+                            }
+                        }
+                    }
+                }
+    
+                .section-produto-disney-descricao {
+                    height: auto;
+                    text-align: center;
+                    
+    
+                    .h4-produto-disney {
+                        
+                    }
+    
+                    .p-produto-disney {
+                        
+                    }
+                }
+            }
+    
+            .div-produto-disney-direito {
+                
+            }
+        }
+    }
+
 }

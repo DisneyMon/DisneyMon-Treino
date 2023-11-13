@@ -146,6 +146,20 @@
 
         .main-escolha {
             min-width: 520px;
+
+            .section-escolha{
+                
+                
+                .section-escolha-form {
+                    height: 100%;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .section-escolha-radio {
+                        flex-direction: column;
+                    }
+                }
+            }
     
             .figure-escolha{
                 width: 30%;
@@ -154,11 +168,9 @@
             }
 
             .figure-escolha-2 {
-                display: flex;
-                border-top-left-radius: 60px;
-                border-bottom-left-radius: 60px;
-                border-top-right-radius: 0px;
-                border-bottom-right-radius: 0px;
+
+                display: none;
+                
             }
         }
     }
