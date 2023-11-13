@@ -15,6 +15,10 @@ export default function CadastroProduto() {
     const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
     const navigate = useNavigate();
 
+    function navegar() {
+        navigate('/')
+    }
+
     useEffect(() => {
         if(isAdmin === false){
             navigate("/Erro")
@@ -23,18 +27,27 @@ export default function CadastroProduto() {
     
     async function cadastroProduto(event){
         event.preventDefault()
-        let body = {
-            nome: nome,
-            preco: preco,
-            imagemUrl: imagemUrl,
-            descricao: descricao,
-            tipo: tipo
+        if(preco < 0){
+            alert("Preço negativo não é permitido")
         }
-        try {
-            let response = await axios.post("http://localhost:8080/produtos/", body)
-            alert(`Produto cadastrado com sucesso`)
-        } catch (error) {
-            alert(`Erro ao tentar cadastrar`)
+        else{
+            let body = {
+                nome: nome,
+                preco: preco,
+                imagemUrl: imagemUrl,
+                descricao: descricao,
+                tipo: tipo
+            }
+            try {
+                let response = await axios.post("http://localhost:8080/produtos/", body)
+                alert(`Produto cadastrado com sucesso`)
+                setNome("")
+                setImagemUrl("")
+                setDescricao("")
+                setPreco("")
+            } catch (error) {
+                alert(`Erro ao tentar cadastrar`)
+            }
         }
     }
 
@@ -82,6 +95,7 @@ export default function CadastroProduto() {
                             </article>
 
                             <button onClick={cadastroProduto}>Cadastrar</button>
+                            <button className="button-escolha" onClick={navegar}>Home</button>
 
                         </form>
                         

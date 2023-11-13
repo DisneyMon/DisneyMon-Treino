@@ -8,6 +8,10 @@ export default function Deletar() {
     const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
     const navigate = useNavigate();
 
+    function navegar() {
+        navigate('/')
+    }
+
     useEffect(() => {
         if(isAdmin === false){
             navigate("/Erro")
@@ -19,12 +23,18 @@ export default function Deletar() {
 
     async function deletar(event){
         event.preventDefault()
-        try {
-            let response = await axios.delete(`http://localhost:8080/${tipo}/${id}`)
-            alert(`Delete do tipo ${tipo} realizado com sucesso`)
-        } catch (error) {
-            alert(`Erro ao tentar buscar`)
+        if(id < 0){
+            alert("não é permitido id negativo")
         }
+        else{
+            try {
+                let response = await axios.delete(`http://localhost:8080/${tipo}/${id}`)
+                alert(`Delete do tipo ${tipo} realizado com sucesso`)
+            } catch (error) {
+                alert(`Erro ao tentar buscar`)
+            }
+        }
+        
     }
 
     return (
@@ -62,6 +72,8 @@ export default function Deletar() {
                             </article>
 
                             </section>
+
+                            <button className="button-escolha" onClick={navegar}>Home</button>
 
                         </section>
 

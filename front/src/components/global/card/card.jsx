@@ -7,7 +7,7 @@ export default function Card(props) {
 
     function navegar() {
                 
-                navigate('/compra-produto');
+            navigate('/compra-produto', { state: { imagemUrl: props.imagemUrl, nome: props.nome, preco: props.preco, descricao: props.descricao } });
         }
 
     return (
@@ -32,9 +32,9 @@ export default function Card(props) {
 
                 <h1 className='h1-card'>R$ {props.preco}</h1>
 
-                <p className='p-card'><strong>R$ {props.preco * 0.8}</strong> à vista com desconto</p>
-
+                <p className='p-card'><strong>R$ {(props.preco * 0.8).toFixed(2)}</strong> à vista com desconto</p>
             </article>
+            
 
         </section>
 

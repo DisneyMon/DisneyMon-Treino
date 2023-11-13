@@ -16,6 +16,10 @@ export default function AlteracaoProduto() {
     const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
     const navigate = useNavigate();
 
+    function navegar() {
+        navigate('/')
+    }
+
     useEffect(() => {
         if(isAdmin === false){
             navigate("/Erro")
@@ -24,23 +28,28 @@ export default function AlteracaoProduto() {
     
     async function updateProduto(event){
         event.preventDefault()
-        let body = {
-            nome: nome,
-            preco: preco,
-            imagemUrl: imagemUrl,
-            descricao: descricao,
-            tipo: tipo
+        if(id < 0 || preco < 0){
+            alert("não é permitido id ou preco negativo")
         }
-        try {
-            let response = await axios.put(`http://localhost:8080/produtos/${id}`, body)
-            if(response.data == null){
-                alert("Esse produto não existe")
+        else{
+            let body = {
+                nome: nome,
+                preco: preco,
+                imagemUrl: imagemUrl,
+                descricao: descricao,
+                tipo: tipo
             }
-            else{
-                alert(`Produto alterado com sucesso`)
+            try {
+                let response = await axios.put(`http://localhost:8080/produtos/${id}`, body)
+                if(response.data == null){
+                    alert("Esse produto não existe")
+                }
+                else{
+                    alert(`Produto alterado com sucesso`)
+                }
+            } catch (error) {
+                alert(`Erro ao tentar atualizar`)
             }
-        } catch (error) {
-            alert(`Erro ao tentar atualizar`)
         }
     }
 
@@ -121,6 +130,7 @@ export default function AlteracaoProduto() {
                             </article>
 
                             <button onClick={updateProduto}>Alterar</button>
+                            <button className="button-escolha" onClick={navegar}>Home</button>
 
                         </form>
                         

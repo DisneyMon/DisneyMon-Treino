@@ -14,6 +14,10 @@ export default function AlteracaoUsuario() {
     const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
     const navigate = useNavigate();
 
+    function navegar() {
+        navigate('/')
+    }
+
     useEffect(() => {
         if(isAdmin === false){
             navigate("/Erro")
@@ -22,22 +26,27 @@ export default function AlteracaoUsuario() {
     
     async function updateUsuario(event){
         event.preventDefault()
-        let body = {
-            nome: nome,
-            email: email,
-            senha: senha
+        if(id < 0){
+            alert("não é permitido id negativo")
         }
-        try {
-            let response = await axios.put(`http://localhost:8080/usuarios/${id}`, body)
-            if(response.data == null){
-                alert("Essa pessoa não existe")
+        else{
+            let body = {
+                nome: nome,
+                email: email,
+                senha: senha
             }
-            else{
-                alert(`Usuario alterado com sucesso`)
+            try {
+                let response = await axios.put(`http://localhost:8080/usuarios/${id}`, body)
+                if(response.data == null){
+                    alert("Essa pessoa não existe")
+                }
+                else{
+                    alert(`Usuario alterado com sucesso`)
+                }
+            } catch (error) {
+                alert(`Erro ao tentar atualizar`)
             }
-        } catch (error) {
-            alert(`Erro ao tentar atualizar`)
-        }
+        } 
     }
 
     async function autoComplete(event){
@@ -101,6 +110,7 @@ export default function AlteracaoUsuario() {
 
 
                             <button onClick={updateUsuario}>Alterar</button>
+                            <button className="button-escolha" onClick={navegar}>Home</button>
 
                         </form>
                         

@@ -1,8 +1,11 @@
 import './index.scss'
 
 import Header from '../../components/global/header/header'
+import { useLocation } from 'react-router-dom';
 
 export default function CompraProdutoDisney() {
+
+    const { state: { imagemUrl, nome, preco, descricao} } = useLocation();
 
     return (
 
@@ -20,14 +23,14 @@ export default function CompraProdutoDisney() {
                     <section className='section-produto-disney-img'>
 
                         <figure className='figure-produto-disney'>
-                            <img className='img-produto-disney' src='/assets/images/compra-disney/compra-disney-mickey.webp' alt='Produto Disney' />
+                            <img className='img-produto-disney' src={imagemUrl} alt='Produto Disney' />
                         </figure>
 
                         <section className="section-produto-disney-titulo">
 
-                            <h2 className='h2-produto-disney'>Mickey - Pelúcia de 40cm</h2>
+                            <h2 className='h2-produto-disney'>{nome}</h2>
                             <div className="div-produto-disney-linha"></div>
-                            <h1 className='h1-produto-disney'>R$ 169,99</h1>
+                            <h1 className='h1-produto-disney'>R$ {preco}</h1>
                             <h3 className='h3-produto-disney'>Frete Grátis</h3>
 
                             <section className="section-produto-disney-botao">
@@ -42,7 +45,7 @@ export default function CompraProdutoDisney() {
 
                         <h4 className='h4-produto-disney'>Descrição</h4>
 
-                        <p className='p-produto-disney'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, impedit quia mollitia quos, rerum tenetur explicabo quas nostrum atque corporis quasi eligendi facere voluptatum delectus ullam labore laboriosam corrupti commodi.</p>
+                        <p className='p-produto-disney'>{descricao}</p>
                         
 
                     </section>

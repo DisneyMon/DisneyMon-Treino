@@ -11,7 +11,12 @@ export default function EscolhaUsuProd() {
         if(isAdmin === false){
             navigate("/Erro")
         }
+
     }, [])
+
+    function navegar() {
+        navigate('/')
+    }
     
     function escolhaUsuarioProduto() {
 
@@ -56,6 +61,7 @@ export default function EscolhaUsuProd() {
                         </section>
 
                         <button className="button-escolha" onClick={escolhaUsuarioProduto}>Escolher</button>
+                        <button className="button-escolha" onClick={navegar}>Home</button>
 
                     </section> 
 

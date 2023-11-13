@@ -8,6 +8,10 @@ export default function EscolhaCadAlt() {
     const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
     const navigate = useNavigate();
 
+    function navegar() {
+        navigate('/')
+    }
+
     useEffect(() => {
         if(isAdmin === false){
             navigate("/Erro")
@@ -62,6 +66,7 @@ export default function EscolhaCadAlt() {
                         </section>
 
                         <button className="button-escolha" onClick={escolhaCadProd}>Escolher</button>
+                        <button className="button-escolha" onClick={navegar}>Home</button>
 
                     </section> 
 
